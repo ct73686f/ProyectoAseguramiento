@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <IisApp path="C:\Users\CARLOS-LAP\source\repos\ProyectoAseguramiento\ProyectoAseguramiento\obj\Release\Package\PackageTmp" />
-  <setAcl path="C:\Users\CARLOS-LAP\source\repos\ProyectoAseguramiento\ProyectoAseguramiento\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
-  <setAcl path="C:\Users\CARLOS-LAP\source\repos\ProyectoAseguramiento\ProyectoAseguramiento\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+  <IisApp path="P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\ProyectoAseguramiento\obj\Release\Package\PackageTmp" />
+  <setAcl path="P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\ProyectoAseguramiento\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\ProyectoAseguramiento\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
 </sitemanifest>

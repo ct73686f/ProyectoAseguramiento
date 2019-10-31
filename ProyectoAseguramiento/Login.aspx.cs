@@ -26,6 +26,7 @@ namespace ProyectoAseguramiento
         {
             String usuario = "carlos";
             String contraseña = "gaby2019";
+            carlos = "prueba";
             
             if (txtNombreUsuario.Text.Equals(usuario) && txtContraseña.Text.Equals(contraseña)){
                 this.blnError = false;

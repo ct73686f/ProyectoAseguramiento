@@ -654,6 +654,7 @@
     <Content Include="plugins\input-mask\phone-codes\phone-be.json" />
     <Content Include="plugins\input-mask\phone-codes\phone-codes.json" />
     <None Include="Properties\PublishProfiles\ProyectoAseguramiento20191031111808 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\ProyectoAseguramiento2019x - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
