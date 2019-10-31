@@ -104,7 +104,6 @@ P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\ProyectoAseguramiento\bin\ro
 P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\ProyectoAseguramiento\bin\roslyn\VBCSCompiler.exe.config
 P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\ProyectoAseguramiento\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\ProyectoAseguramiento\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\ProyectoAseguramiento\obj\Release\ProyectoAseguramiento.csprojAssemblyReference.cache
 P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\ProyectoAseguramiento\obj\Release\ProyectoAseguramiento.csproj.CoreCompileInputs.cache
 P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\ProyectoAseguramiento\obj\Release\ProyectoAseguramiento.csproj.CopyComplete
 P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\ProyectoAseguramiento\obj\Release\ProyectoAseguramiento.dll

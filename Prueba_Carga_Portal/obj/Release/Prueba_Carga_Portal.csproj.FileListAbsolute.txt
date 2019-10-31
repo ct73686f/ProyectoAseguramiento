@@ -1,0 +1,11 @@
+P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\Prueba_Carga_Portal\bin\Release\Prueba_Carga_Portal.dll
+P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\Prueba_Carga_Portal\bin\Release\Prueba_Carga_Portal.pdb
+P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\Prueba_Carga_Portal\bin\Release\Microsoft.VisualStudio.QualityTools.WebTestFramework.dll
+P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\Prueba_Carga_Portal\bin\Release\es\Microsoft.VisualStudio.QualityTools.WebTestFramework.resources.dll
+P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\Prueba_Carga_Portal\obj\Release\Prueba_Carga_Portal.csprojAssemblyReference.cache
+P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\Prueba_Carga_Portal\obj\Release\Prueba_Carga_Portal.csproj.CoreCompileInputs.cache
+P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\Prueba_Carga_Portal\obj\Release\Prueba_Carga_Portal.csproj.CopyComplete
+P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\Prueba_Carga_Portal\obj\Release\Prueba_Carga_Portal.dll
+P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\Prueba_Carga_Portal\obj\Release\Prueba_Carga_Portal.pdb
+P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\Prueba_Carga_Portal\bin\Release\Navegar_portal_Azure.webtest
+P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\Prueba_Carga_Portal\bin\Release\LoadTest1.loadtest
