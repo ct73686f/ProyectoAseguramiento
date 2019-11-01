@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<LoadTest Name="LoadTest1" Description="" Owner="" storage="p:\desktop\aseguramiento_2019\proyectoaseguramiento\prueba_carga_portal\loadtest1.loadtest" Priority="2147483647" Enabled="true" CssProjectStructure="" CssIteration="" DeploymentItemsEditable="" WorkItemIds="" TraceLevel="None" CurrentRunConfig="Configuración de ejecución1" Id="91093287-6e16-4d3a-8d38-8416807207f8" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+<LoadTest Name="LoadTest1" Description="" Owner="" storage="p:\desktop\aseguramiento_2019\proyectoaseguramiento\prueba_carga_portal\loadtest1.loadtest" Priority="2147483647" Enabled="true" CssProjectStructure="" CssIteration="" DeploymentItemsEditable="" WorkItemIds="" TraceLevel="None" CurrentRunConfig="Configuración de ejecución1" Id="5d71ac22-61dd-46d8-b534-f0cccc7960b2" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
   <Scenarios>
     <Scenario Name="Escenario1" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
       <ThinkProfile Value="0.2" Pattern="NormalDistribution" />
@@ -8,7 +8,7 @@
         <TestProfile Name="Navegar_portal_Azure" Path="navegar_portal_azure.webtest" Id="0fdd5cf0-81e8-4336-8296-72f61a1a88bd" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       </TestMix>
       <BrowserMix>
-        <BrowserProfile Percentage="20">
+        <BrowserProfile Percentage="28">
           <Browser Name="Internet Explorer 9.0" MaxConnections="6">
             <Headers>
               <Header Name="User-Agent" Value="Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)" />
@@ -18,7 +18,7 @@
             </Headers>
           </Browser>
         </BrowserProfile>
-        <BrowserProfile Percentage="3">
+        <BrowserProfile Percentage="5">
           <Browser Name="Chrome 2" MaxConnections="6">
             <Headers>
               <Header Name="User-Agent" Value="Mozilla/5.0 (Windows; U; Windows NT 5.1;) AppleWebKit/530.1 (KHTML, like Gecko) Chrome/2.0.169.1 Safari/530.1" />
@@ -29,7 +29,7 @@
             </Headers>
           </Browser>
         </BrowserProfile>
-        <BrowserProfile Percentage="3">
+        <BrowserProfile Percentage="5">
           <Browser Name="Firefox 2.0" MaxConnections="2">
             <Headers>
               <Header Name="User-Agent" Value="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1) Gecko/20061010 Firefox/2.0" />
@@ -40,7 +40,7 @@
             </Headers>
           </Browser>
         </BrowserProfile>
-        <BrowserProfile Percentage="3">
+        <BrowserProfile Percentage="5">
           <Browser Name="Firefox 3.0" MaxConnections="6">
             <Headers>
               <Header Name="User-Agent" Value="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1) Gecko/20061010 Firefox/3.0" />
@@ -51,7 +51,7 @@
             </Headers>
           </Browser>
         </BrowserProfile>
-        <BrowserProfile Percentage="3">
+        <BrowserProfile Percentage="5">
           <Browser Name="Internet Explorer 10.0" MaxConnections="6">
             <Headers>
               <Header Name="User-Agent" Value="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)" />
@@ -61,7 +61,7 @@
             </Headers>
           </Browser>
         </BrowserProfile>
-        <BrowserProfile Percentage="6">
+        <BrowserProfile Percentage="5">
           <Browser Name="Internet Explorer 11.0" MaxConnections="6">
             <Headers>
               <Header Name="User-Agent" Value="Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko" />
@@ -71,7 +71,7 @@
             </Headers>
           </Browser>
         </BrowserProfile>
-        <BrowserProfile Percentage="11">
+        <BrowserProfile Percentage="5">
           <Browser Name="Internet Explorer 5.5" MaxConnections="2">
             <Headers>
               <Header Name="User-Agent" Value="Mozilla/4.0 (compatible; IE 5.5; Windows NT 5.1)" />
@@ -81,7 +81,7 @@
             </Headers>
           </Browser>
         </BrowserProfile>
-        <BrowserProfile Percentage="7">
+        <BrowserProfile Percentage="5">
           <Browser Name="Internet Explorer 6.0" MaxConnections="2">
             <Headers>
               <Header Name="User-Agent" Value="Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)" />
@@ -91,7 +91,7 @@
             </Headers>
           </Browser>
         </BrowserProfile>
-        <BrowserProfile Percentage="7">
+        <BrowserProfile Percentage="6">
           <Browser Name="Internet Explorer 7.0" MaxConnections="2">
             <Headers>
               <Header Name="User-Agent" Value="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)" />
@@ -101,7 +101,7 @@
             </Headers>
           </Browser>
         </BrowserProfile>
-        <BrowserProfile Percentage="7">
+        <BrowserProfile Percentage="6">
           <Browser Name="Internet Explorer 8.0" MaxConnections="6">
             <Headers>
               <Header Name="User-Agent" Value="Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1)" />
@@ -111,7 +111,7 @@
             </Headers>
           </Browser>
         </BrowserProfile>
-        <BrowserProfile Percentage="6">
+        <BrowserProfile Percentage="5">
           <Browser Name="Netscape 6.0" MaxConnections="2">
             <Headers>
               <Header Name="User-Agent" Value="Mozilla/5.0 (Windows; U; Windows NT 5.0; en; rv:1.0) Netscape/6.0" />
@@ -121,7 +121,7 @@
             </Headers>
           </Browser>
         </BrowserProfile>
-        <BrowserProfile Percentage="6">
+        <BrowserProfile Percentage="5">
           <Browser Name="Pocket IE 3.02" MaxConnections="2">
             <Headers>
               <Header Name="User-Agent" Value="Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; JavaScript; 240x320)" />
@@ -130,7 +130,7 @@
             </Headers>
           </Browser>
         </BrowserProfile>
-        <BrowserProfile Percentage="6">
+        <BrowserProfile Percentage="5">
           <Browser Name="Safari 3" MaxConnections="4">
             <Headers>
               <Header Name="User-Agent" Value="Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US) AppleWebKit/525.28 (KHTML, like Gecko) Version/3.2.2 Safari/525.28.1" />
@@ -141,7 +141,7 @@
             </Headers>
           </Browser>
         </BrowserProfile>
-        <BrowserProfile Percentage="6">
+        <BrowserProfile Percentage="5">
           <Browser Name="Safari for iPhone" MaxConnections="2">
             <Headers>
               <Header Name="User-Agent" Value="Mozilla/5.0 (iPhone; U; CPU like Mac OS X;) AppleWebKit/420+ (KHTML, like Gecko) Version/3.0 Mobile/1A543a Safari/419.3" />
@@ -151,7 +151,7 @@
             </Headers>
           </Browser>
         </BrowserProfile>
-        <BrowserProfile Percentage="6">
+        <BrowserProfile Percentage="5">
           <Browser Name="Smartphone" MaxConnections="2">
             <Headers>
               <Header Name="User-Agent" Value="Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; Smartphone; JavaScript; *)" />
@@ -563,7 +563,7 @@
     </CounterSet>
   </CounterSets>
   <RunConfigurations>
-    <RunConfiguration Name="Configuración de ejecución1" Description="Prueba inicial de Carga del portal de Azure" ResultsStoreType="Database" TimingDetailsStorage="AllIndividualDetails" SaveTestLogsOnError="true" SaveTestLogsFrequency="0" MaxErrorDetails="200" MaxErrorsPerType="1000" MaxThresholdViolations="1000" MaxRequestUrlsReported="1000" UseTestIterations="false" RunDuration="180" WarmupTime="0" CoolDownTime="0" TestIterations="100" WebTestConnectionModel="ConnectionPerUser" WebTestConnectionPoolSize="50" SampleRate="15" ValidationLevel="High" SqlTracingConnectString="" SqlTracingConnectStringDisplayValue="" SqlTracingDirectory="" SqlTracingEnabled="false" SqlTracingFileCount="2" SqlTracingRolloverEnabled="true" SqlTracingMinimumDuration="500" RunUnitTestsInAppDomain="true" CoreCount="0" ResourcesRetentionTimeInMinutes="0" AgentDiagnosticsLevel="Warning">
+    <RunConfiguration Name="Configuración de ejecución1" Description="" ResultsStoreType="Database" TimingDetailsStorage="AllIndividualDetails" SaveTestLogsOnError="true" SaveTestLogsFrequency="0" MaxErrorDetails="200" MaxErrorsPerType="1000" MaxThresholdViolations="1000" MaxRequestUrlsReported="1000" UseTestIterations="false" RunDuration="300" WarmupTime="0" CoolDownTime="0" TestIterations="100" WebTestConnectionModel="ConnectionPerUser" WebTestConnectionPoolSize="50" SampleRate="15" ValidationLevel="High" SqlTracingConnectString="" SqlTracingConnectStringDisplayValue="" SqlTracingDirectory="" SqlTracingEnabled="false" SqlTracingFileCount="2" SqlTracingRolloverEnabled="true" SqlTracingMinimumDuration="500" RunUnitTestsInAppDomain="true" CoreCount="0" ResourcesRetentionTimeInMinutes="0" AgentDiagnosticsLevel="Warning">
       <CounterSetMappings>
         <CounterSetMapping ComputerName="[CONTROLLER MACHINE]">
           <CounterSetReferences>
@@ -578,7 +578,7 @@
         </CounterSetMapping>
       </CounterSetMappings>
       <LoadGeneratorLocations>
-        <GeoLocation Location="Central US" Percentage="100" />
+        <GeoLocation Location="Default" Percentage="100" />
       </LoadGeneratorLocations>
     </RunConfiguration>
   </RunConfigurations>

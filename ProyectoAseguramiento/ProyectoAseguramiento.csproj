@@ -655,6 +655,7 @@
     <Content Include="plugins\input-mask\phone-codes\phone-codes.json" />
     <None Include="Properties\PublishProfiles\ProyectoAseguramiento20191031111808 - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\ProyectoAseguramiento2019x - Web Deploy.pubxml" />
+    <Content Include="SpecFlowFeature1.feature" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

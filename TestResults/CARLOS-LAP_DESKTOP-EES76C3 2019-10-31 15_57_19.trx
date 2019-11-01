@@ -1,0 +1,784 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="b2996ce4-98dc-42ff-9818-4102f3e44889" name="CARLOS-LAP@DESKTOP-EES76C3 2019-10-31 15:57:19" runUser="DESKTOP-EES76C3\CARLOS-LAP" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f4864072-3405-4aed-930c-68e3ad41cab1">
+    <Description>Esta es la configuración de pruebas predeterminada para una serie de pruebas local.</Description>
+    <Execution hostProcessPlatform="MSIL">
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="CARLOS-LAP_DESKTOP-EES76C3 2019-10-31 15_57_19" />
+    <Properties>
+      <Property name="TestSettingsUIType" value="UnitTest" />
+    </Properties>
+  </TestSettings>
+  <Times creation="2019-10-31T15:57:19.7502823-06:00" queuing="2019-10-31T15:57:20.5142397-06:00" start="2019-10-31T15:57:20.7476158-06:00" finish="2019-10-31T16:03:15.0530622-06:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="0" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="1" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <LoadTest Name="LoadTest1" Description="" Owner="" storage="p:\desktop\aseguramiento_2019\proyectoaseguramiento\prueba_carga_portal\loadtest1.loadtest" Priority="2147483647" Enabled="true" CssProjectStructure="" CssIteration="" DeploymentItemsEditable="" WorkItemIds="" TraceLevel="None" CurrentRunConfig="Configuración de ejecución1" Id="5d71ac22-61dd-46d8-b534-f0cccc7960b2">
+      <Scenarios>
+        <Scenario Name="Escenario1" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="false" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
+          <ThinkProfile Value="0.2" Pattern="NormalDistribution" />
+          <LoadProfile Pattern="Step" InitialUsers="1" MaxUsers="300" StepUsers="10" StepDuration="10" StepRampTime="0" />
+          <TestMix>
+            <TestProfile Name="Navegar_portal_Azure" Path="p:\desktop\aseguramiento_2019\proyectoaseguramiento\prueba_carga_portal\navegar_portal_azure.webtest" Id="0fdd5cf0-81e8-4336-8296-72f61a1a88bd" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+          </TestMix>
+          <BrowserMix>
+            <BrowserProfile Percentage="28">
+              <Browser Name="Internet Explorer 9.0" MaxConnections="6">
+                <Headers>
+                  <Header Name="User-Agent" Value="Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)" />
+                  <Header Name="Accept" Value="*/*" />
+                  <Header Name="Accept-Language" Value="{{$IEAcceptLanguage}}" />
+                  <Header Name="Accept-Encoding" Value="GZIP" />
+                </Headers>
+              </Browser>
+            </BrowserProfile>
+            <BrowserProfile Percentage="5">
+              <Browser Name="Chrome 2" MaxConnections="6">
+                <Headers>
+                  <Header Name="User-Agent" Value="Mozilla/5.0 (Windows; U; Windows NT 5.1;) AppleWebKit/530.1 (KHTML, like Gecko) Chrome/2.0.169.1 Safari/530.1" />
+                  <Header Name="Accept" Value="*/*" />
+                  <Header Name="Accept-Language" Value="{{$IEAcceptLanguage}}" />
+                  <Header Name="Accept-Encoding" Value="gzip,deflate" />
+                  <Header Name="Accept-Charset" Value="ISO-8859-1,*,utf-8" />
+                </Headers>
+              </Browser>
+            </BrowserProfile>
+            <BrowserProfile Percentage="5">
+              <Browser Name="Firefox 2.0" MaxConnections="2">
+                <Headers>
+                  <Header Name="User-Agent" Value="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1) Gecko/20061010 Firefox/2.0" />
+                  <Header Name="Accept" Value="*/*" />
+                  <Header Name="Accept-Language" Value="{{$IEAcceptLanguage}}" />
+                  <Header Name="Accept-Encoding" Value="GZIP" />
+                  <Header Name="Accept-Charset" Value="ISO-8859-1,utf-8;q=0.7,*;q=0.7" />
+                </Headers>
+              </Browser>
+            </BrowserProfile>
+            <BrowserProfile Percentage="5">
+              <Browser Name="Firefox 3.0" MaxConnections="6">
+                <Headers>
+                  <Header Name="User-Agent" Value="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1) Gecko/20061010 Firefox/3.0" />
+                  <Header Name="Accept" Value="*/*" />
+                  <Header Name="Accept-Language" Value="{{$IEAcceptLanguage}}" />
+                  <Header Name="Accept-Encoding" Value="GZIP" />
+                  <Header Name="Accept-Charset" Value="ISO-8859-1,utf-8;q=0.7,*;q=0.7" />
+                </Headers>
+              </Browser>
+            </BrowserProfile>
+            <BrowserProfile Percentage="5">
+              <Browser Name="Internet Explorer 10.0" MaxConnections="6">
+                <Headers>
+                  <Header Name="User-Agent" Value="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)" />
+                  <Header Name="Accept" Value="*/*" />
+                  <Header Name="Accept-Language" Value="{{$IEAcceptLanguage}}" />
+                  <Header Name="Accept-Encoding" Value="GZIP" />
+                </Headers>
+              </Browser>
+            </BrowserProfile>
+            <BrowserProfile Percentage="5">
+              <Browser Name="Internet Explorer 11.0" MaxConnections="6">
+                <Headers>
+                  <Header Name="User-Agent" Value="Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko" />
+                  <Header Name="Accept" Value="*/*" />
+                  <Header Name="Accept-Language" Value="{{$IEAcceptLanguage}}" />
+                  <Header Name="Accept-Encoding" Value="GZIP" />
+                </Headers>
+              </Browser>
+            </BrowserProfile>
+            <BrowserProfile Percentage="5">
+              <Browser Name="Internet Explorer 5.5" MaxConnections="2">
+                <Headers>
+                  <Header Name="User-Agent" Value="Mozilla/4.0 (compatible; IE 5.5; Windows NT 5.1)" />
+                  <Header Name="Accept" Value="*/*" />
+                  <Header Name="Accept-Language" Value="{{$IEAcceptLanguage}}" />
+                  <Header Name="Accept-Encoding" Value="GZIP" />
+                </Headers>
+              </Browser>
+            </BrowserProfile>
+            <BrowserProfile Percentage="5">
+              <Browser Name="Internet Explorer 6.0" MaxConnections="2">
+                <Headers>
+                  <Header Name="User-Agent" Value="Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)" />
+                  <Header Name="Accept" Value="*/*" />
+                  <Header Name="Accept-Language" Value="{{$IEAcceptLanguage}}" />
+                  <Header Name="Accept-Encoding" Value="GZIP" />
+                </Headers>
+              </Browser>
+            </BrowserProfile>
+            <BrowserProfile Percentage="6">
+              <Browser Name="Internet Explorer 7.0" MaxConnections="2">
+                <Headers>
+                  <Header Name="User-Agent" Value="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)" />
+                  <Header Name="Accept" Value="*/*" />
+                  <Header Name="Accept-Language" Value="{{$IEAcceptLanguage}}" />
+                  <Header Name="Accept-Encoding" Value="GZIP" />
+                </Headers>
+              </Browser>
+            </BrowserProfile>
+            <BrowserProfile Percentage="6">
+              <Browser Name="Internet Explorer 8.0" MaxConnections="6">
+                <Headers>
+                  <Header Name="User-Agent" Value="Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1)" />
+                  <Header Name="Accept" Value="*/*" />
+                  <Header Name="Accept-Language" Value="{{$IEAcceptLanguage}}" />
+                  <Header Name="Accept-Encoding" Value="GZIP" />
+                </Headers>
+              </Browser>
+            </BrowserProfile>
+            <BrowserProfile Percentage="5">
+              <Browser Name="Netscape 6.0" MaxConnections="2">
+                <Headers>
+                  <Header Name="User-Agent" Value="Mozilla/5.0 (Windows; U; Windows NT 5.0; en; rv:1.0) Netscape/6.0" />
+                  <Header Name="Accept" Value="image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, */*" />
+                  <Header Name="Accept-Language" Value="{{$IEAcceptLanguage}}" />
+                  <Header Name="Accept-Encoding" Value="GZIP" />
+                </Headers>
+              </Browser>
+            </BrowserProfile>
+            <BrowserProfile Percentage="5">
+              <Browser Name="Pocket IE 3.02" MaxConnections="2">
+                <Headers>
+                  <Header Name="User-Agent" Value="Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; JavaScript; 240x320)" />
+                  <Header Name="Accept" Value="image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, */*" />
+                  <Header Name="Accept-Language" Value="{{$IEAcceptLanguage}}" />
+                </Headers>
+              </Browser>
+            </BrowserProfile>
+            <BrowserProfile Percentage="5">
+              <Browser Name="Safari 3" MaxConnections="4">
+                <Headers>
+                  <Header Name="User-Agent" Value="Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US) AppleWebKit/525.28 (KHTML, like Gecko) Version/3.2.2 Safari/525.28.1" />
+                  <Header Name="Accept" Value="*/*" />
+                  <Header Name="Accept-Language" Value="{{$IEAcceptLanguage}}" />
+                  <Header Name="Accept-Encoding" Value="GZIP,deflate" />
+                  <Header Name="Accept-Charset" Value="ISO-8859-1,utf-8;q=0.7,*;q=0.7" />
+                </Headers>
+              </Browser>
+            </BrowserProfile>
+            <BrowserProfile Percentage="5">
+              <Browser Name="Safari for iPhone" MaxConnections="2">
+                <Headers>
+                  <Header Name="User-Agent" Value="Mozilla/5.0 (iPhone; U; CPU like Mac OS X;) AppleWebKit/420+ (KHTML, like Gecko) Version/3.0 Mobile/1A543a Safari/419.3" />
+                  <Header Name="Accept" Value="*/*" />
+                  <Header Name="Accept-Language" Value="{{$IEAcceptLanguage}}" />
+                  <Header Name="Accept-Encoding" Value="GZIP,deflate" />
+                </Headers>
+              </Browser>
+            </BrowserProfile>
+            <BrowserProfile Percentage="5">
+              <Browser Name="Smartphone" MaxConnections="2">
+                <Headers>
+                  <Header Name="User-Agent" Value="Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; Smartphone; JavaScript; *)" />
+                  <Header Name="Accept" Value="image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, */*" />
+                  <Header Name="Accept-Language" Value="{{$IEAcceptLanguage}}" />
+                </Headers>
+              </Browser>
+            </BrowserProfile>
+          </BrowserMix>
+          <NetworkMix>
+            <NetworkProfile Percentage="100">
+              <Network Name="LAN" BandwidthInKbps="1000000" NetworkProfileConfigurationXml="&lt;Emulation&gt;&lt;VirtualChannel name=&quot;defaultChannel&quot;&gt;&lt;FilterList/&gt;&lt;VirtualLink instances=&quot;1&quot; name=&quot;defaultLink&quot;&gt;&lt;LinkRule dir=&quot;upstream&quot;&gt;&lt;Bandwidth&gt;&lt;Speed unit=&quot;kbps&quot;&gt;1000000&lt;/Speed&gt;&lt;/Bandwidth&gt;&lt;/LinkRule&gt;&lt;LinkRule dir=&quot;downstream&quot;&gt;&lt;Bandwidth&gt;&lt;Speed unit=&quot;kbps&quot;&gt;1000000&lt;/Speed&gt;&lt;/Bandwidth&gt;&lt;/LinkRule&gt;&lt;/VirtualLink&gt;&lt;/VirtualChannel&gt;&lt;/Emulation&gt;" />
+            </NetworkProfile>
+          </NetworkMix>
+        </Scenario>
+      </Scenarios>
+      <CounterSets>
+        <CounterSet Name="DESKTOP-EES76C3" CounterSetType="LoadTest" LocId="">
+          <CounterCategories>
+            <CounterCategory Name="LoadTest:Scenario">
+              <Counters>
+                <Counter Name="User Load" HigherIsBetter="true" />
+                <Counter Name="Tests Running" HigherIsBetter="true" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="LoadTest:Test">
+              <Counters>
+                <Counter Name="Total Tests" HigherIsBetter="true" />
+                <Counter Name="Passed Tests" HigherIsBetter="true" />
+                <Counter Name="Failed Tests" />
+                <Counter Name="Tests/Sec" HigherIsBetter="true" />
+                <Counter Name="Passed Tests/Sec" HigherIsBetter="true" />
+                <Counter Name="Failed Tests/Sec" />
+                <Counter Name="Avg. Requests/Test" HigherIsBetter="true" />
+                <Counter Name="Avg. Test Time" />
+                <Counter Name="% Time in LoadTestPlugin" />
+                <Counter Name="% Time in WebTest code" />
+                <Counter Name="% Time in Rules" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="LoadTest:Transaction">
+              <Counters>
+                <Counter Name="Total Transactions" HigherIsBetter="true" />
+                <Counter Name="Avg. Transaction Time" />
+                <Counter Name="Avg. Response Time" />
+                <Counter Name="Transactions/Sec" HigherIsBetter="true" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="LoadTest:Errors">
+              <Counters>
+                <Counter Name="Http Errors" />
+                <Counter Name="Validation Rule Errors" />
+                <Counter Name="Extraction Rule Errors" />
+                <Counter Name="Requests Timed Out" />
+                <Counter Name="Exceptions" />
+                <Counter Name="Total Errors" />
+                <Counter Name="Errores por segundo" />
+                <Counter Name="Infracciones de umbral por segundo" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="LoadTest:Page">
+              <Counters>
+                <Counter Name="Total Pages" HigherIsBetter="true" />
+                <Counter Name="Avg. Page Time" />
+                <Counter Name="Page Response Time Goal" HigherIsBetter="true" />
+                <Counter Name="% Pages Meeting Goal" HigherIsBetter="true" />
+                <Counter Name="Pages/Sec" HigherIsBetter="true" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="LoadTest:Request">
+              <Counters>
+                <Counter Name="Total Requests" HigherIsBetter="true" />
+                <Counter Name="Passed Requests" HigherIsBetter="true" />
+                <Counter Name="Failed Requests" />
+                <Counter Name="Cached Requests" HigherIsBetter="true" />
+                <Counter Name="Requests/Sec" HigherIsBetter="true" />
+                <Counter Name="Passed Requests/Sec" HigherIsBetter="true" />
+                <Counter Name="Failed Requests/Sec" />
+                <Counter Name="Avg. First Byte Time" />
+                <Counter Name="Avg. Response Time" />
+                <Counter Name="Avg. Connection Wait Time">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareCounters, Microsoft.VisualStudio.QualityTools.LoadTest, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                      <RuleParameters>
+                        <RuleParameter Name="DependentCategory" Value="LoadTest:Page" />
+                        <RuleParameter Name="DependentCounter" Value="Avg. Page Time" />
+                        <RuleParameter Name="DependentInstance" Value="_Total" />
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="0.25" />
+                        <RuleParameter Name="CriticalThreshold" Value="0.5" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="Avg. Content Length" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="LoadTest:LogEntries">
+              <Counters>
+                <Counter Name="Total Log Entries" />
+                <Counter Name="Log Entries/Sec" />
+              </Counters>
+            </CounterCategory>
+          </CounterCategories>
+        </CounterSet>
+        <CounterSet Name="Controlador" CounterSetType="Controller" LocId="CounterSet_Controller">
+          <CounterCategories>
+            <CounterCategory Name="Memory">
+              <Counters>
+                <Counter Name="% Committed Bytes In Use" Range="100" />
+                <Counter Name="Available MBytes" RangeGroup="Memory Bytes" HigherIsBetter="true">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="False" />
+                        <RuleParameter Name="WarningThreshold" Value="100" />
+                        <RuleParameter Name="CriticalThreshold" Value="50" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="False" />
+                        <RuleParameter Name="WarningThreshold" Value="100" />
+                        <RuleParameter Name="CriticalThreshold" Value="50" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="Page Faults/sec" />
+                <Counter Name="Pages/sec" />
+                <Counter Name="Pool Paged Bytes" RangeGroup="Memory Bytes" />
+                <Counter Name="Pool Nonpaged bytes" RangeGroup="Memory Bytes" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="Network Interface">
+              <Counters>
+                <Counter Name="Bytes Received/sec" RangeGroup="Network Bytes" />
+                <Counter Name="Bytes Sent/sec" RangeGroup="Network Bytes" />
+                <Counter Name="Output Queue Length">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="1.5" />
+                        <RuleParameter Name="CriticalThreshold" Value="2" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="1.5" />
+                        <RuleParameter Name="CriticalThreshold" Value="2" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="Packets Received/sec" RangeGroup="Network Packets" />
+                <Counter Name="Packets Sent/sec" RangeGroup="Network Packets" />
+                <Counter Name="Current Bandwidth" RangeGroup="Network Bytes" />
+                <Counter Name="Bytes Total/sec" RangeGroup="Network Bytes">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareCounters, Microsoft.VisualStudio.QualityTools.LoadTest, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                      <RuleParameters>
+                        <RuleParameter Name="DependentCategory" Value="Network Interface" />
+                        <RuleParameter Name="DependentCounter" Value="Current Bandwidth" />
+                        <RuleParameter Name="DependentInstance" Value="" />
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="0.6" />
+                        <RuleParameter Name="CriticalThreshold" Value="0.7" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareCounters, Microsoft.VisualStudio.QualityTools.LoadTest, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                      <RuleParameters>
+                        <RuleParameter Name="DependentCategory" Value="Network Interface" />
+                        <RuleParameter Name="DependentCounter" Value="Current Bandwidth" />
+                        <RuleParameter Name="DependentInstance" Value="" />
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="0.6" />
+                        <RuleParameter Name="CriticalThreshold" Value="0.7" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+              </Counters>
+              <Instances>
+                <Instance Name="*" />
+              </Instances>
+            </CounterCategory>
+            <CounterCategory Name="PhysicalDisk">
+              <Counters>
+                <Counter Name="% Disk Read Time" Range="100" />
+                <Counter Name="% Disk Time" Range="100" />
+                <Counter Name="% Disk Write Time" Range="100" />
+                <Counter Name="% Idle Time" Range="100" HigherIsBetter="true">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="False" />
+                        <RuleParameter Name="WarningThreshold" Value="40" />
+                        <RuleParameter Name="CriticalThreshold" Value="20" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="False" />
+                        <RuleParameter Name="WarningThreshold" Value="40" />
+                        <RuleParameter Name="CriticalThreshold" Value="20" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="Avg. Disk Bytes/Read" RangeGroup="DiskBytesRate" />
+                <Counter Name="Avg. Disk Bytes/Transfer" RangeGroup="DiskBytesRate" />
+                <Counter Name="Avg. Disk Bytes/Write" RangeGroup="DiskBytesRate" />
+                <Counter Name="Avg. Disk Queue Length" RangeGroup="Disk Queue Length" />
+                <Counter Name="Avg. Disk Read Queue Length" RangeGroup="Disk Queue Length" />
+                <Counter Name="Avg. Disk Write Queue Length" RangeGroup="Disk Queue Length" />
+                <Counter Name="Current Disk Queue Length" RangeGroup="Disk Queue Length" />
+                <Counter Name="Avg. Disk sec/Read" RangeGroup="Disk sec" />
+                <Counter Name="Avg. Disk sec/Transfer" RangeGroup="Disk sec" />
+                <Counter Name="Avg. Disk sec/Write" RangeGroup="Disk sec" />
+                <Counter Name="Disk Bytes/sec" RangeGroup="Disk Bytes sec" />
+                <Counter Name="Disk Read Bytes/sec" RangeGroup="Disk Bytes sec" />
+                <Counter Name="Disk Reads/sec" RangeGroup="Disk Transfers sec" />
+                <Counter Name="Disk Transfers/sec" RangeGroup="Disk Transfers sec" />
+                <Counter Name="Disk Write Bytes/sec" RangeGroup="Disk Bytes sec" />
+                <Counter Name="Disk Writes/sec" RangeGroup="Disk Transfers sec" />
+                <Counter Name="Split IO/Sec" RangeGroup="Disk Transfers sec" />
+              </Counters>
+              <Instances>
+                <Instance Name="*" />
+              </Instances>
+            </CounterCategory>
+            <CounterCategory Name="Processor">
+              <Counters>
+                <Counter Name="% Processor Time" Range="100">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="75" />
+                        <RuleParameter Name="CriticalThreshold" Value="90" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="75" />
+                        <RuleParameter Name="CriticalThreshold" Value="90" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="% Privileged Time" Range="100" />
+                <Counter Name="% User Time" Range="100" />
+              </Counters>
+              <Instances>
+                <Instance Name="_Total" />
+              </Instances>
+            </CounterCategory>
+            <CounterCategory Name="System">
+              <Counters>
+                <Counter Name="Context Switches/sec" />
+                <Counter Name="Processes" />
+                <Counter Name="Processor Queue Length" />
+                <Counter Name="Threads" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="Process">
+              <Counters>
+                <Counter Name="% Processor Time" RangeGroup="Processor Time" />
+                <Counter Name="% Privileged Time" RangeGroup="Processor Time" />
+                <Counter Name="% User Time" RangeGroup="Processor Time" />
+                <Counter Name="Handle Count" />
+                <Counter Name="Thread Count" />
+                <Counter Name="Private Bytes" RangeGroup="Memory Bytes" />
+                <Counter Name="Virtual Bytes" RangeGroup="Memory Bytes" />
+                <Counter Name="Working Set" RangeGroup="Memory Bytes" />
+              </Counters>
+              <Instances>
+                <Instance Name="QTController" />
+                <Instance Name="QTController64" />
+              </Instances>
+            </CounterCategory>
+          </CounterCategories>
+          <DefaultCountersForAutomaticGraphs>
+            <DefaultCounter CategoryName="Processor" CounterName="% Processor Time" InstanceName="_Total" GraphName="" />
+            <DefaultCounter CategoryName="Memory" CounterName="Available MBytes" InstanceName="" GraphName="" />
+          </DefaultCountersForAutomaticGraphs>
+        </CounterSet>
+        <CounterSet Name="Agente" CounterSetType="Agent" LocId="CounterSet_Agent">
+          <CounterCategories>
+            <CounterCategory Name="Memory">
+              <Counters>
+                <Counter Name="% Committed Bytes In Use" Range="100" />
+                <Counter Name="Available MBytes" RangeGroup="Memory Bytes" HigherIsBetter="true">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="False" />
+                        <RuleParameter Name="WarningThreshold" Value="100" />
+                        <RuleParameter Name="CriticalThreshold" Value="50" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="Page Faults/sec" />
+                <Counter Name="Pages/sec" />
+                <Counter Name="Pool Paged Bytes" RangeGroup="Memory Bytes" />
+                <Counter Name="Pool Nonpaged bytes" RangeGroup="Memory Bytes" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="Network Interface">
+              <Counters>
+                <Counter Name="Bytes Received/sec" RangeGroup="Network Bytes" />
+                <Counter Name="Bytes Sent/sec" RangeGroup="Network Bytes" />
+                <Counter Name="Output Queue Length">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="1.5" />
+                        <RuleParameter Name="CriticalThreshold" Value="2" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="Packets Received/sec" RangeGroup="Network Packets" />
+                <Counter Name="Packets Sent/sec" RangeGroup="Network Packets" />
+                <Counter Name="Current Bandwidth" RangeGroup="Network Bytes" />
+                <Counter Name="Bytes Total/sec" RangeGroup="Network Bytes">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareCounters, Microsoft.VisualStudio.QualityTools.LoadTest, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                      <RuleParameters>
+                        <RuleParameter Name="DependentCategory" Value="Network Interface" />
+                        <RuleParameter Name="DependentCounter" Value="Current Bandwidth" />
+                        <RuleParameter Name="DependentInstance" Value="" />
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="0.6" />
+                        <RuleParameter Name="CriticalThreshold" Value="0.7" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+              </Counters>
+              <Instances>
+                <Instance Name="*" />
+              </Instances>
+            </CounterCategory>
+            <CounterCategory Name="PhysicalDisk">
+              <Counters>
+                <Counter Name="% Disk Read Time" Range="100" />
+                <Counter Name="% Disk Time" Range="100" />
+                <Counter Name="% Disk Write Time" Range="100" />
+                <Counter Name="% Idle Time" Range="100" HigherIsBetter="true">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="False" />
+                        <RuleParameter Name="WarningThreshold" Value="40" />
+                        <RuleParameter Name="CriticalThreshold" Value="20" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="Avg. Disk Bytes/Read" RangeGroup="DiskBytesRate" />
+                <Counter Name="Avg. Disk Bytes/Transfer" RangeGroup="DiskBytesRate" />
+                <Counter Name="Avg. Disk Bytes/Write" RangeGroup="DiskBytesRate" />
+                <Counter Name="Avg. Disk Queue Length" RangeGroup="Disk Queue Length" />
+                <Counter Name="Avg. Disk Read Queue Length" RangeGroup="Disk Queue Length" />
+                <Counter Name="Avg. Disk Write Queue Length" RangeGroup="Disk Queue Length" />
+                <Counter Name="Current Disk Queue Length" RangeGroup="Disk Queue Length" />
+                <Counter Name="Avg. Disk sec/Read" RangeGroup="Disk sec" />
+                <Counter Name="Avg. Disk sec/Transfer" RangeGroup="Disk sec" />
+                <Counter Name="Avg. Disk sec/Write" RangeGroup="Disk sec" />
+                <Counter Name="Disk Bytes/sec" RangeGroup="Disk Bytes sec" />
+                <Counter Name="Disk Read Bytes/sec" RangeGroup="Disk Bytes sec" />
+                <Counter Name="Disk Reads/sec" RangeGroup="Disk Transfers sec" />
+                <Counter Name="Disk Transfers/sec" RangeGroup="Disk Transfers sec" />
+                <Counter Name="Disk Write Bytes/sec" RangeGroup="Disk Bytes sec" />
+                <Counter Name="Disk Writes/sec" RangeGroup="Disk Transfers sec" />
+                <Counter Name="Split IO/Sec" RangeGroup="Disk Transfers sec" />
+              </Counters>
+              <Instances>
+                <Instance Name="*" />
+              </Instances>
+            </CounterCategory>
+            <CounterCategory Name="Processor">
+              <Counters>
+                <Counter Name="% Processor Time" Range="100">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="75" />
+                        <RuleParameter Name="CriticalThreshold" Value="90" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="% Privileged Time" Range="100" />
+                <Counter Name="% User Time" Range="100" />
+              </Counters>
+              <Instances>
+                <Instance Name="0" />
+                <Instance Name="_Total" />
+              </Instances>
+            </CounterCategory>
+            <CounterCategory Name="System">
+              <Counters>
+                <Counter Name="Context Switches/sec" />
+                <Counter Name="Processes" />
+                <Counter Name="Processor Queue Length" />
+                <Counter Name="Threads" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="Process">
+              <Counters>
+                <Counter Name="% Processor Time" RangeGroup="Processor Time" />
+                <Counter Name="% Privileged Time" RangeGroup="Processor Time" />
+                <Counter Name="% User Time" RangeGroup="Processor Time" />
+                <Counter Name="Handle Count" />
+                <Counter Name="Thread Count" />
+                <Counter Name="Private Bytes" RangeGroup="Memory Bytes" />
+                <Counter Name="Virtual Bytes" RangeGroup="Memory Bytes" />
+                <Counter Name="Working Set" RangeGroup="Memory Bytes" />
+              </Counters>
+              <Instances>
+                <Instance Name="devenv" />
+                <Instance Name="QTAgentService" />
+                <Instance Name="QTAgent" />
+                <Instance Name="QTAgent32" />
+                <Instance Name="QTDCAgent" />
+                <Instance Name="QTDCAgent32" />
+                <Instance Name="QTAgent_35" />
+                <Instance Name="QTAgent_40" />
+                <Instance Name="QTAgent32_35" />
+                <Instance Name="QTAgent32_40" />
+              </Instances>
+            </CounterCategory>
+          </CounterCategories>
+          <DefaultCountersForAutomaticGraphs>
+            <DefaultCounter CategoryName="Processor" CounterName="% Processor Time" InstanceName="0" GraphName="" RunType="Local" />
+            <DefaultCounter CategoryName="Processor" CounterName="% Processor Time" InstanceName="_Total" GraphName="" RunType="Remote" />
+            <DefaultCounter CategoryName="Memory" CounterName="Available MBytes" InstanceName="" GraphName="" />
+          </DefaultCountersForAutomaticGraphs>
+        </CounterSet>
+      </CounterSets>
+      <RunConfigurations>
+        <RunConfiguration Name="Configuración de ejecución1" Description="" ResultsStoreType="Database" TimingDetailsStorage="AllIndividualDetails" SaveTestLogsOnError="true" SaveTestLogsFrequency="0" MaxErrorDetails="200" MaxErrorsPerType="1000" MaxThresholdViolations="1000" MaxRequestUrlsReported="1000" UseTestIterations="false" RunDuration="300" WarmupTime="0" CoolDownTime="0" TestIterations="100" WebTestConnectionModel="ConnectionPerUser" WebTestConnectionPoolSize="50" SampleRate="15" ValidationLevel="High" SqlTracingConnectString="" SqlTracingConnectStringDisplayValue="" SqlTracingDirectory="" SqlTracingEnabled="false" SqlTracingFileCount="2" SqlTracingRolloverEnabled="true" SqlTracingMinimumDuration="500" RunUnitTestsInAppDomain="true" CoreCount="0" ResourcesRetentionTimeInMinutes="0" AgentDiagnosticsLevel="Warning">
+          <CounterSetMappings>
+            <CounterSetMapping ComputerName="[CONTROLLER MACHINE]">
+              <CounterSetReferences>
+                <CounterSetReference CounterSetName="LoadTest" />
+                <CounterSetReference CounterSetName="Controlador" />
+              </CounterSetReferences>
+            </CounterSetMapping>
+            <CounterSetMapping ComputerName="[AGENT MACHINES]">
+              <CounterSetReferences>
+                <CounterSetReference CounterSetName="Agente" />
+              </CounterSetReferences>
+            </CounterSetMapping>
+          </CounterSetMappings>
+          <LoadGeneratorLocations>
+            <GeoLocation Location="Default" Percentage="100" />
+          </LoadGeneratorLocations>
+        </RunConfiguration>
+      </RunConfigurations>
+    </LoadTest>
+    <WebTest name="Navegar_portal_Azure" storage="p:\desktop\aseguramiento_2019\proyectoaseguramiento\prueba_carga_portal\navegar_portal_azure.webtest" id="0fdd5cf0-81e8-4336-8296-72f61a1a88bd" persistedWebTest="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pg0KPFdlYlRlc3QgTmFtZT0iTmF2ZWdhcl9wb3J0YWxfQXp1cmUiIElkPSIwZmRkNWNmMC04MWU4LTQzMzYtODI5Ni03MmY2MWExYTg4YmQiIE93bmVyPSIiIFByaW9yaXR5PSIyMTQ3NDgzNjQ3IiBFbmFibGVkPSJUcnVlIiBDc3NQcm9qZWN0U3RydWN0dXJlPSIiIENzc0l0ZXJhdGlvbj0iIiBUaW1lb3V0PSIwIiBXb3JrSXRlbUlkcz0iIiB4bWxucz0iaHR0cDovL21pY3Jvc29mdC5jb20vc2NoZW1hcy9WaXN1YWxTdHVkaW8vVGVhbVRlc3QvMjAxMCIgRGVzY3JpcHRpb249IiIgQ3JlZGVudGlhbFVzZXJOYW1lPSIiIENyZWRlbnRpYWxQYXNzd29yZD0iIiBQcmVBdXRoZW50aWNhdGU9IlRydWUiIFByb3h5PSJkZWZhdWx0IiBTdG9wT25FcnJvcj0iRmFsc2UiIFJlY29yZGVkUmVzdWx0RmlsZT0iV2ViVGVzdDIuNDQxMTUyOTAtMTM0ZC00ZDAwLTllMWQtOGYzYjMzZDc5MDk3LnJlYy53ZWJ0ZXN0cmVzdWx0IiBSZXN1bHRzTG9jYWxlPSIiPg0KICA8SXRlbXM+DQogICAgPFJlcXVlc3QgTWV0aG9kPSJHRVQiIEd1aWQ9Ijc2NmY4NTUxLTIwNDktNGNlYy1iMjU2LTJjYjg0MzQ1YzI1MiIgVmVyc2lvbj0iMS4xIiBVcmw9Imh0dHBzOi8vcHJveWVjdG9hc2VndXJhbWllbnRvMjAxOXguYXp1cmV3ZWJzaXRlcy5uZXQvbG9naW4uYXNweCIgVGhpbmtUaW1lPSIwIiBUaW1lb3V0PSIzMDAiIFBhcnNlRGVwZW5kZW50UmVxdWVzdHM9IlRydWUiIEZvbGxvd1JlZGlyZWN0cz0iVHJ1ZSIgUmVjb3JkUmVzdWx0PSJUcnVlIiBDYWNoZT0iRmFsc2UiIFJlc3BvbnNlVGltZUdvYWw9IjAiIEVuY29kaW5nPSJ1dGYtOCIgRXhwZWN0ZWRIdHRwU3RhdHVzQ29kZT0iMCIgRXhwZWN0ZWRSZXNwb25zZVVybD0iIiBSZXBvcnRpbmdOYW1lPSIiIElnbm9yZUh0dHBTdGF0dXNDb2RlPSJGYWxzZSI+DQogICAgICA8RXh0cmFjdGlvblJ1bGVzPg0KICAgICAgICA8RXh0cmFjdGlvblJ1bGUgQ2xhc3NuYW1lPSJNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvLlRlc3RUb29scy5XZWJUZXN0aW5nLlJ1bGVzLkV4dHJhY3RIaWRkZW5GaWVsZHMsIE1pY3Jvc29mdC5WaXN1YWxTdHVkaW8uUXVhbGl0eVRvb2xzLldlYlRlc3RGcmFtZXdvcmssIFZlcnNpb249MTAuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49YjAzZjVmN2YxMWQ1MGEzYSIgVmFyaWFibGVOYW1lPSIxIiBEaXNwbGF5TmFtZT0iRXh0cmFlciBjYW1wb3Mgb2N1bHRvcyIgRGVzY3JpcHRpb249IkV4dHJhZXIgdG9kb3MgbG9zIGNhbXBvcyBvY3VsdG9zIGRlIGxhIHJlc3B1ZXN0YSB5IGNvbG9jYXJsb3MgZW4gZWwgY29udGV4dG8gZGUgbGEgcHJ1ZWJhLiI+DQogICAgICAgICAgPFJ1bGVQYXJhbWV0ZXJzPg0KICAgICAgICAgICAgPFJ1bGVQYXJhbWV0ZXIgTmFtZT0iUmVxdWlyZWQiIFZhbHVlPSJUcnVlIiAvPg0KICAgICAgICAgICAgPFJ1bGVQYXJhbWV0ZXIgTmFtZT0iSHRtbERlY29kZSIgVmFsdWU9IlRydWUiIC8+DQogICAgICAgICAgPC9SdWxlUGFyYW1ldGVycz4NCiAgICAgICAgPC9FeHRyYWN0aW9uUnVsZT4NCiAgICAgIDwvRXh0cmFjdGlvblJ1bGVzPg0KICAgICAgPENvcnJlbGF0aW9uRXh0cmFjdGlvblJ1bGVzPg0KICAgICAgICA8RXh0cmFjdGlvblJ1bGUgQ2xhc3NuYW1lPSJNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvLlRlc3RUb29scy5XZWJUZXN0aW5nLlJ1bGVzLkV4dHJhY3RGb3JtRmllbGQsIE1pY3Jvc29mdC5WaXN1YWxTdHVkaW8uUXVhbGl0eVRvb2xzLldlYlRlc3RGcmFtZXdvcmssIFZlcnNpb249MTAuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49YjAzZjVmN2YxMWQ1MGEzYSIgVmFyaWFibGVOYW1lPSJGb3JtUG9zdFBhcmFtMS5CdXR0b24xIiBEaXNwbGF5TmFtZT0iIiBEZXNjcmlwdGlvbj0iIj4NCiAgICAgICAgICA8UnVsZVBhcmFtZXRlcnM+DQogICAgICAgICAgICA8UnVsZVBhcmFtZXRlciBOYW1lPSJOYW1lIiBWYWx1ZT0iQnV0dG9uMSIgLz4NCiAgICAgICAgICAgIDxSdWxlUGFyYW1ldGVyIE5hbWU9Ikh0bWxEZWNvZGUiIFZhbHVlPSJUcnVlIiAvPg0KICAgICAgICAgICAgPFJ1bGVQYXJhbWV0ZXIgTmFtZT0iUmVxdWlyZWQiIFZhbHVlPSJGYWxzZSIgLz4NCiAgICAgICAgICAgIDxSdWxlUGFyYW1ldGVyIE5hbWU9IkluZGV4IiBWYWx1ZT0iMCIgLz4NCiAgICAgICAgICA8L1J1bGVQYXJhbWV0ZXJzPg0KICAgICAgICA8L0V4dHJhY3Rpb25SdWxlPg0KICAgICAgICA8RXh0cmFjdGlvblJ1bGUgQ2xhc3NuYW1lPSJNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvLlRlc3RUb29scy5XZWJUZXN0aW5nLlJ1bGVzLkV4dHJhY3RGb3JtRmllbGQsIE1pY3Jvc29mdC5WaXN1YWxTdHVkaW8uUXVhbGl0eVRvb2xzLldlYlRlc3RGcmFtZXdvcmssIFZlcnNpb249MTAuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49YjAzZjVmN2YxMWQ1MGEzYSIgVmFyaWFibGVOYW1lPSJGb3JtUG9zdFBhcmFtMi5CdXR0b24xIiBEaXNwbGF5TmFtZT0iIiBEZXNjcmlwdGlvbj0iIj4NCiAgICAgICAgICA8UnVsZVBhcmFtZXRlcnM+DQogICAgICAgICAgICA8UnVsZVBhcmFtZXRlciBOYW1lPSJOYW1lIiBWYWx1ZT0iQnV0dG9uMSIgLz4NCiAgICAgICAgICAgIDxSdWxlUGFyYW1ldGVyIE5hbWU9Ikh0bWxEZWNvZGUiIFZhbHVlPSJUcnVlIiAvPg0KICAgICAgICAgICAgPFJ1bGVQYXJhbWV0ZXIgTmFtZT0iUmVxdWlyZWQiIFZhbHVlPSJGYWxzZSIgLz4NCiAgICAgICAgICAgIDxSdWxlUGFyYW1ldGVyIE5hbWU9IkluZGV4IiBWYWx1ZT0iMCIgLz4NCiAgICAgICAgICA8L1J1bGVQYXJhbWV0ZXJzPg0KICAgICAgICA8L0V4dHJhY3Rpb25SdWxlPg0KICAgICAgPC9Db3JyZWxhdGlvbkV4dHJhY3Rpb25SdWxlcz4NCiAgICA8L1JlcXVlc3Q+DQogICAgPFJlcXVlc3QgTWV0aG9kPSJHRVQiIEd1aWQ9ImVlYWIyNjc3LTdmZGQtNGM4Mi04ZDgzLTdhNTdmNDgwNDAwYyIgVmVyc2lvbj0iMS4xIiBVcmw9Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzIiBUaGlua1RpbWU9IjAiIFRpbWVvdXQ9IjMwMCIgUGFyc2VEZXBlbmRlbnRSZXF1ZXN0cz0iVHJ1ZSIgRm9sbG93UmVkaXJlY3RzPSJUcnVlIiBSZWNvcmRSZXN1bHQ9IlRydWUiIENhY2hlPSJGYWxzZSIgUmVzcG9uc2VUaW1lR29hbD0iMCIgRW5jb2Rpbmc9InV0Zi04IiBFeHBlY3RlZEh0dHBTdGF0dXNDb2RlPSIwIiBFeHBlY3RlZFJlc3BvbnNlVXJsPSIiIFJlcG9ydGluZ05hbWU9IiIgSWdub3JlSHR0cFN0YXR1c0NvZGU9IkZhbHNlIj4NCiAgICAgIDxIZWFkZXJzPg0KICAgICAgICA8SGVhZGVyIE5hbWU9IlJlZmVyZXIiIFZhbHVlPSJodHRwczovL3Byb3llY3RvYXNlZ3VyYW1pZW50bzIwMTl4LmF6dXJld2Vic2l0ZXMubmV0L2xvZ2luLmFzcHgiIC8+DQogICAgICA8L0hlYWRlcnM+DQogICAgICA8UXVlcnlTdHJpbmdQYXJhbWV0ZXJzPg0KICAgICAgICA8UXVlcnlTdHJpbmdQYXJhbWV0ZXIgTmFtZT0iZmFtaWx5IiBWYWx1ZT0iU291cmNlK1NhbnMrUHJvOjMwMCw0MDAsNjAwLDcwMCwzMDBpdGFsaWMsNDAwaXRhbGljLDYwMGl0YWxpYyIgUmVjb3JkZWRWYWx1ZT0iU291cmNlK1NhbnMrUHJvOjMwMCw0MDAsNjAwLDcwMCwzMDBpdGFsaWMsNDAwaXRhbGljLDYwMGl0YWxpYyIgQ29ycmVsYXRpb25CaW5kaW5nPSIiIFVybEVuY29kZT0iRmFsc2UiIFVzZVRvR3JvdXBSZXN1bHRzPSJGYWxzZSIgLz4NCiAgICAgIDwvUXVlcnlTdHJpbmdQYXJhbWV0ZXJzPg0KICAgIDwvUmVxdWVzdD4NCiAgICA8UmVxdWVzdCBNZXRob2Q9IkdFVCIgR3VpZD0iMzdjOWY2NmItNjIwNy00OTY2LTlmNWItYjBmMTZjNWQ5OTA1IiBWZXJzaW9uPSIxLjEiIFVybD0iaHR0cHM6Ly9mb250cy5nc3RhdGljLmNvbS9zL3NvdXJjZXNhbnNwcm8vdjEzLzZ4S3dkU0JZS2NTVi1MQ29lUXFmWDFSWU9vM3FQWlpNa2lkczE4SS53b2ZmIiBUaGlua1RpbWU9IjAiIFRpbWVvdXQ9IjMwMCIgUGFyc2VEZXBlbmRlbnRSZXF1ZXN0cz0iVHJ1ZSIgRm9sbG93UmVkaXJlY3RzPSJUcnVlIiBSZWNvcmRSZXN1bHQ9IlRydWUiIENhY2hlPSJGYWxzZSIgUmVzcG9uc2VUaW1lR29hbD0iMCIgRW5jb2Rpbmc9InV0Zi04IiBFeHBlY3RlZEh0dHBTdGF0dXNDb2RlPSIwIiBFeHBlY3RlZFJlc3BvbnNlVXJsPSIiIFJlcG9ydGluZ05hbWU9IiIgSWdub3JlSHR0cFN0YXR1c0NvZGU9IkZhbHNlIj4NCiAgICAgIDxIZWFkZXJzPg0KICAgICAgICA8SGVhZGVyIE5hbWU9IlJlZmVyZXIiIFZhbHVlPSJodHRwczovL3Byb3llY3RvYXNlZ3VyYW1pZW50bzIwMTl4LmF6dXJld2Vic2l0ZXMubmV0L2xvZ2luLmFzcHgiIC8+DQogICAgICA8L0hlYWRlcnM+DQogICAgPC9SZXF1ZXN0Pg0KICAgIDxSZXF1ZXN0IE1ldGhvZD0iR0VUIiBHdWlkPSI1N2RiYWE2My1hODQxLTQzNGYtYTRmNi03NGMwNWE1OTQzNTAiIFZlcnNpb249IjEuMSIgVXJsPSJodHRwczovL2ZvbnRzLmdzdGF0aWMuY29tL3Mvc291cmNlc2Fuc3Byby92MTMvNnhLMWRTQllLY1NWLUxDb2VRcWZYMVJZT28zcVBaN25zRFEud29mZiIgVGhpbmtUaW1lPSIwIiBUaW1lb3V0PSIzMDAiIFBhcnNlRGVwZW5kZW50UmVxdWVzdHM9IlRydWUiIEZvbGxvd1JlZGlyZWN0cz0iVHJ1ZSIgUmVjb3JkUmVzdWx0PSJUcnVlIiBDYWNoZT0iRmFsc2UiIFJlc3BvbnNlVGltZUdvYWw9IjAiIEVuY29kaW5nPSJ1dGYtOCIgRXhwZWN0ZWRIdHRwU3RhdHVzQ29kZT0iMCIgRXhwZWN0ZWRSZXNwb25zZVVybD0iIiBSZXBvcnRpbmdOYW1lPSIiIElnbm9yZUh0dHBTdGF0dXNDb2RlPSJGYWxzZSI+DQogICAgICA8SGVhZGVycz4NCiAgICAgICAgPEhlYWRlciBOYW1lPSJSZWZlcmVyIiBWYWx1ZT0iaHR0cHM6Ly9wcm95ZWN0b2FzZWd1cmFtaWVudG8yMDE5eC5henVyZXdlYnNpdGVzLm5ldC9sb2dpbi5hc3B4IiAvPg0KICAgICAgPC9IZWFkZXJzPg0KICAgIDwvUmVxdWVzdD4NCiAgICA8UmVxdWVzdCBNZXRob2Q9IkdFVCIgR3VpZD0iZTY5OGQ3YzEtN2M4NC00YzE4LWJjN2MtMzI4Yjk1YzBiNGRlIiBWZXJzaW9uPSIxLjEiIFVybD0iaHR0cHM6Ly9mb250cy5nc3RhdGljLmNvbS9zL3NvdXJjZXNhbnNwcm8vdjEzLzZ4S3dkU0JZS2NTVi1MQ29lUXFmWDFSWU9vM3FQWlk0bENkczE4SS53b2ZmIiBUaGlua1RpbWU9IjAiIFRpbWVvdXQ9IjMwMCIgUGFyc2VEZXBlbmRlbnRSZXF1ZXN0cz0iVHJ1ZSIgRm9sbG93UmVkaXJlY3RzPSJUcnVlIiBSZWNvcmRSZXN1bHQ9IlRydWUiIENhY2hlPSJGYWxzZSIgUmVzcG9uc2VUaW1lR29hbD0iMCIgRW5jb2Rpbmc9InV0Zi04IiBFeHBlY3RlZEh0dHBTdGF0dXNDb2RlPSIwIiBFeHBlY3RlZFJlc3BvbnNlVXJsPSIiIFJlcG9ydGluZ05hbWU9IiIgSWdub3JlSHR0cFN0YXR1c0NvZGU9IkZhbHNlIj4NCiAgICAgIDxIZWFkZXJzPg0KICAgICAgICA8SGVhZGVyIE5hbWU9IlJlZmVyZXIiIFZhbHVlPSJodHRwczovL3Byb3llY3RvYXNlZ3VyYW1pZW50bzIwMTl4LmF6dXJld2Vic2l0ZXMubmV0L2xvZ2luLmFzcHgiIC8+DQogICAgICA8L0hlYWRlcnM+DQogICAgPC9SZXF1ZXN0Pg0KICAgIDxSZXF1ZXN0IE1ldGhvZD0iR0VUIiBHdWlkPSIwOTNkZGRiNy05NThkLTQzMGEtODA4MS04NTE1YzdjNDJmNmUiIFZlcnNpb249IjEuMSIgVXJsPSJodHRwczovL2ZvbnRzLmdzdGF0aWMuY29tL3Mvc291cmNlc2Fuc3Byby92MTMvNnhLeWRTQllLY1NWLUxDb2VRcWZYMVJZT28zaWs0endseGRvLndvZmYiIFRoaW5rVGltZT0iMCIgVGltZW91dD0iMzAwIiBQYXJzZURlcGVuZGVudFJlcXVlc3RzPSJUcnVlIiBGb2xsb3dSZWRpcmVjdHM9IlRydWUiIFJlY29yZFJlc3VsdD0iVHJ1ZSIgQ2FjaGU9IkZhbHNlIiBSZXNwb25zZVRpbWVHb2FsPSIwIiBFbmNvZGluZz0idXRmLTgiIEV4cGVjdGVkSHR0cFN0YXR1c0NvZGU9IjAiIEV4cGVjdGVkUmVzcG9uc2VVcmw9IiIgUmVwb3J0aW5nTmFtZT0iIiBJZ25vcmVIdHRwU3RhdHVzQ29kZT0iRmFsc2UiPg0KICAgICAgPEhlYWRlcnM+DQogICAgICAgIDxIZWFkZXIgTmFtZT0iUmVmZXJlciIgVmFsdWU9Imh0dHBzOi8vcHJveWVjdG9hc2VndXJhbWllbnRvMjAxOXguYXp1cmV3ZWJzaXRlcy5uZXQvbG9naW4uYXNweCIgLz4NCiAgICAgIDwvSGVhZGVycz4NCiAgICA8L1JlcXVlc3Q+DQogICAgPFJlcXVlc3QgTWV0aG9kPSJHRVQiIEd1aWQ9IjFlZGE0NGEwLWQzOGUtNDU4Ny05Zjg3LWRiY2E0ZDhlNjQwOSIgVmVyc2lvbj0iMS4xIiBVcmw9Imh0dHBzOi8vZm9udHMuZ3N0YXRpYy5jb20vcy9zb3VyY2VzYW5zcHJvL3YxMy82eEszZFNCWUtjU1YtTENvZVFxZlgxUllPbzNxT0s3ai53b2ZmIiBUaGlua1RpbWU9IjAiIFRpbWVvdXQ9IjMwMCIgUGFyc2VEZXBlbmRlbnRSZXF1ZXN0cz0iVHJ1ZSIgRm9sbG93UmVkaXJlY3RzPSJUcnVlIiBSZWNvcmRSZXN1bHQ9IlRydWUiIENhY2hlPSJGYWxzZSIgUmVzcG9uc2VUaW1lR29hbD0iMCIgRW5jb2Rpbmc9InV0Zi04IiBFeHBlY3RlZEh0dHBTdGF0dXNDb2RlPSIwIiBFeHBlY3RlZFJlc3BvbnNlVXJsPSIiIFJlcG9ydGluZ05hbWU9IiIgSWdub3JlSHR0cFN0YXR1c0NvZGU9IkZhbHNlIj4NCiAgICAgIDxIZWFkZXJzPg0KICAgICAgICA8SGVhZGVyIE5hbWU9IlJlZmVyZXIiIFZhbHVlPSJodHRwczovL3Byb3llY3RvYXNlZ3VyYW1pZW50bzIwMTl4LmF6dXJld2Vic2l0ZXMubmV0L2xvZ2luLmFzcHgiIC8+DQogICAgICA8L0hlYWRlcnM+DQogICAgPC9SZXF1ZXN0Pg0KICAgIDxSZXF1ZXN0IE1ldGhvZD0iR0VUIiBHdWlkPSJkZDc3NmY4NC04YzY1LTRmYTctODQwMC1mZWEzY2Y0OTEyMTIiIFZlcnNpb249IjEuMSIgVXJsPSJodHRwczovL2ZvbnRzLmdzdGF0aWMuY29tL3Mvc291cmNlc2Fuc3Byby92MTMvNnhLeWRTQllLY1NWLUxDb2VRcWZYMVJZT28zaTU0cndseGRvLndvZmYiIFRoaW5rVGltZT0iMCIgVGltZW91dD0iMzAwIiBQYXJzZURlcGVuZGVudFJlcXVlc3RzPSJUcnVlIiBGb2xsb3dSZWRpcmVjdHM9IlRydWUiIFJlY29yZFJlc3VsdD0iVHJ1ZSIgQ2FjaGU9IkZhbHNlIiBSZXNwb25zZVRpbWVHb2FsPSIwIiBFbmNvZGluZz0idXRmLTgiIEV4cGVjdGVkSHR0cFN0YXR1c0NvZGU9IjAiIEV4cGVjdGVkUmVzcG9uc2VVcmw9IiIgUmVwb3J0aW5nTmFtZT0iIiBJZ25vcmVIdHRwU3RhdHVzQ29kZT0iRmFsc2UiPg0KICAgICAgPEhlYWRlcnM+DQogICAgICAgIDxIZWFkZXIgTmFtZT0iUmVmZXJlciIgVmFsdWU9Imh0dHBzOi8vcHJveWVjdG9hc2VndXJhbWllbnRvMjAxOXguYXp1cmV3ZWJzaXRlcy5uZXQvbG9naW4uYXNweCIgLz4NCiAgICAgIDwvSGVhZGVycz4NCiAgICA8L1JlcXVlc3Q+DQogICAgPFJlcXVlc3QgTWV0aG9kPSJHRVQiIEd1aWQ9IjUyYzU4YmVjLTYzMTAtNDFlNC1iY2Q4LWNkZWE0ZGYzZDkxMCIgVmVyc2lvbj0iMS4xIiBVcmw9Imh0dHBzOi8vZm9udHMuZ3N0YXRpYy5jb20vcy9zb3VyY2VzYW5zcHJvL3YxMy82eEt5ZFNCWUtjU1YtTENvZVFxZlgxUllPbzNpZzR2d2x4ZG8ud29mZiIgVGhpbmtUaW1lPSI4MSIgVGltZW91dD0iMzAwIiBQYXJzZURlcGVuZGVudFJlcXVlc3RzPSJUcnVlIiBGb2xsb3dSZWRpcmVjdHM9IlRydWUiIFJlY29yZFJlc3VsdD0iVHJ1ZSIgQ2FjaGU9IkZhbHNlIiBSZXNwb25zZVRpbWVHb2FsPSIwIiBFbmNvZGluZz0idXRmLTgiIEV4cGVjdGVkSHR0cFN0YXR1c0NvZGU9IjAiIEV4cGVjdGVkUmVzcG9uc2VVcmw9IiIgUmVwb3J0aW5nTmFtZT0iIiBJZ25vcmVIdHRwU3RhdHVzQ29kZT0iRmFsc2UiPg0KICAgICAgPEhlYWRlcnM+DQogICAgICAgIDxIZWFkZXIgTmFtZT0iUmVmZXJlciIgVmFsdWU9Imh0dHBzOi8vcHJveWVjdG9hc2VndXJhbWllbnRvMjAxOXguYXp1cmV3ZWJzaXRlcy5uZXQvbG9naW4uYXNweCIgLz4NCiAgICAgIDwvSGVhZGVycz4NCiAgICA8L1JlcXVlc3Q+DQogICAgPFJlcXVlc3QgTWV0aG9kPSJHRVQiIEd1aWQ9IjNhNjBhYmI2LTEwM2QtNGY1NC1hNTBlLWY3MWY2OTUzMzliYyIgVmVyc2lvbj0iMS4xIiBVcmw9Imh0dHBzOi8vcHJveWVjdG9hc2VndXJhbWllbnRvMjAxOXguYXp1cmV3ZWJzaXRlcy5uZXQvbG9naW4uYXNweCIgVGhpbmtUaW1lPSIwIiBUaW1lb3V0PSIzMDAiIFBhcnNlRGVwZW5kZW50UmVxdWVzdHM9IlRydWUiIEZvbGxvd1JlZGlyZWN0cz0iVHJ1ZSIgUmVjb3JkUmVzdWx0PSJUcnVlIiBDYWNoZT0iRmFsc2UiIFJlc3BvbnNlVGltZUdvYWw9IjAiIEVuY29kaW5nPSJ1dGYtOCIgRXhwZWN0ZWRIdHRwU3RhdHVzQ29kZT0iMCIgRXhwZWN0ZWRSZXNwb25zZVVybD0iIiBSZXBvcnRpbmdOYW1lPSIiIElnbm9yZUh0dHBTdGF0dXNDb2RlPSJGYWxzZSI+DQogICAgICA8RGVwZW5kZW50UmVxdWVzdHM+DQogICAgICAgIDxSZXF1ZXN0IE1ldGhvZD0iUE9TVCIgR3VpZD0iOWE5N2EyMDktMzkxMC00NzBiLTlkNjYtNzg1OWJjMWZmMmM0IiBWZXJzaW9uPSIxLjEiIFVybD0iaHR0cHM6Ly9wcm95ZWN0b2FzZWd1cmFtaWVudG8yMDE5eC5henVyZXdlYnNpdGVzLm5ldC9sb2dpbi5hc3B4IiBUaGlua1RpbWU9IjAiIFRpbWVvdXQ9IjMwMCIgUGFyc2VEZXBlbmRlbnRSZXF1ZXN0cz0iVHJ1ZSIgRm9sbG93UmVkaXJlY3RzPSJUcnVlIiBSZWNvcmRSZXN1bHQ9IlRydWUiIENhY2hlPSJGYWxzZSIgUmVzcG9uc2VUaW1lR29hbD0iMCIgRW5jb2Rpbmc9InV0Zi04IiBFeHBlY3RlZEh0dHBTdGF0dXNDb2RlPSIwIiBFeHBlY3RlZFJlc3BvbnNlVXJsPSIiIFJlcG9ydGluZ05hbWU9IiIgSWdub3JlSHR0cFN0YXR1c0NvZGU9IkZhbHNlIj4NCiAgICAgICAgICA8SGVhZGVycz4NCiAgICAgICAgICAgIDxIZWFkZXIgTmFtZT0iUmVmZXJlciIgVmFsdWU9Imh0dHBzOi8vcHJveWVjdG9hc2VndXJhbWllbnRvMjAxOXguYXp1cmV3ZWJzaXRlcy5uZXQvbG9naW4uYXNweCIgLz4NCiAgICAgICAgICA8L0hlYWRlcnM+DQogICAgICAgICAgPEZvcm1Qb3N0SHR0cEJvZHk+DQogICAgICAgICAgICA8Rm9ybVBvc3RQYXJhbWV0ZXIgTmFtZT0iX19WSUVXU1RBVEUiIFZhbHVlPSJ7eyRISURERU4xLl9fVklFV1NUQVRFfX0iIFJlY29yZGVkVmFsdWU9IjY0TTVLaVN4SGFjS3FZSUxkNVVJQXUySiszR3B4WllFc0VRSnFPZDhMbTI4WDdvcUV6ODc3Q2dRN2k5U0M5dXJLb2FOQmxzdm9rV0cyWXE4NE5oLzdZOXNmMm8wc01aaVY2TjQvUmJFWHZvPSIgQ29ycmVsYXRpb25CaW5kaW5nPSIiIFVybEVuY29kZT0iVHJ1ZSIgLz4NCiAgICAgICAgICAgIDxGb3JtUG9zdFBhcmFtZXRlciBOYW1lPSJfX1ZJRVdTVEFURUdFTkVSQVRPUiIgVmFsdWU9Int7JEhJRERFTjEuX19WSUVXU1RBVEVHRU5FUkFUT1J9fSIgUmVjb3JkZWRWYWx1ZT0iQzJFRTlBQkIiIENvcnJlbGF0aW9uQmluZGluZz0iIiBVcmxFbmNvZGU9IlRydWUiIC8+DQogICAgICAgICAgICA8Rm9ybVBvc3RQYXJhbWV0ZXIgTmFtZT0iX19FVkVOVFZBTElEQVRJT04iIFZhbHVlPSJ7eyRISURERU4xLl9fRVZFTlRWQUxJREFUSU9OfX0iIFJlY29yZGVkVmFsdWU9IjNQVUM2dXBLRDRQd2VlVmJXMTV2UVVLdm9ZNUxUZzQwZ1VPV0wrbEJ4d0ROMGVFNUJVT1BsT2wwTG54ZWFLMU5EWUVZYTJqZzZQSFFMeHdBZ3I2emZ2WkNOUnFKdkJwNy95azQzU0lnUnRXNUpzZ3R3WDhJb2M1OU1HU2FiV0pzT0NHaVdEaCtyb1ZIbnk5Wlozby96a0s1SWVBb1pGMmZpb2JOT1prMFB3Zz0iIENvcnJlbGF0aW9uQmluZGluZz0iIiBVcmxFbmNvZGU9IlRydWUiIC8+DQogICAgICAgICAgICA8Rm9ybVBvc3RQYXJhbWV0ZXIgTmFtZT0idHh0Tm9tYnJlVXN1YXJpbyIgVmFsdWU9IkNhcmxvcyIgUmVjb3JkZWRWYWx1ZT0iQ2FybG9zIiBDb3JyZWxhdGlvbkJpbmRpbmc9IiIgVXJsRW5jb2RlPSJUcnVlIiAvPg0KICAgICAgICAgICAgPEZvcm1Qb3N0UGFyYW1ldGVyIE5hbWU9InR4dENvbnRyYXNlw7FhIiBWYWx1ZT0iYWxlamFuZG8iIFJlY29yZGVkVmFsdWU9ImFsZWphbmRvIiBDb3JyZWxhdGlvbkJpbmRpbmc9IiIgVXJsRW5jb2RlPSJUcnVlIiAvPg0KICAgICAgICAgICAgPEZvcm1Qb3N0UGFyYW1ldGVyIE5hbWU9IkJ1dHRvbjEiIFZhbHVlPSJJbmljaWFyIFNlc2nDs24iIFJlY29yZGVkVmFsdWU9IkluaWNpYXIgU2VzacOzbiIgQ29ycmVsYXRpb25CaW5kaW5nPSJ7e0Zvcm1Qb3N0UGFyYW0yLkJ1dHRvbjF9fSIgVXJsRW5jb2RlPSJUcnVlIiAvPg0KICAgICAgICAgIDwvRm9ybVBvc3RIdHRwQm9keT4NCiAgICAgICAgPC9SZXF1ZXN0Pg0KICAgICAgICA8UmVxdWVzdCBNZXRob2Q9IkdFVCIgR3VpZD0iY2E3M2QxMGItNTlkYy00YWMzLWJjYWQtOWE4NTNlY2NjZGIxIiBWZXJzaW9uPSIxLjEiIFVybD0iaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3MiIFRoaW5rVGltZT0iMCIgVGltZW91dD0iMzAwIiBQYXJzZURlcGVuZGVudFJlcXVlc3RzPSJUcnVlIiBGb2xsb3dSZWRpcmVjdHM9IlRydWUiIFJlY29yZFJlc3VsdD0iVHJ1ZSIgQ2FjaGU9IkZhbHNlIiBSZXNwb25zZVRpbWVHb2FsPSIwIiBFbmNvZGluZz0idXRmLTgiIEV4cGVjdGVkSHR0cFN0YXR1c0NvZGU9IjAiIEV4cGVjdGVkUmVzcG9uc2VVcmw9IiIgUmVwb3J0aW5nTmFtZT0iIiBJZ25vcmVIdHRwU3RhdHVzQ29kZT0iRmFsc2UiPg0KICAgICAgICAgIDxIZWFkZXJzPg0KICAgICAgICAgICAgPEhlYWRlciBOYW1lPSJSZWZlcmVyIiBWYWx1ZT0iaHR0cHM6Ly9wcm95ZWN0b2FzZWd1cmFtaWVudG8yMDE5eC5henVyZXdlYnNpdGVzLm5ldC9sb2dpbi5hc3B4IiAvPg0KICAgICAgICAgIDwvSGVhZGVycz4NCiAgICAgICAgICA8UXVlcnlTdHJpbmdQYXJhbWV0ZXJzPg0KICAgICAgICAgICAgPFF1ZXJ5U3RyaW5nUGFyYW1ldGVyIE5hbWU9ImZhbWlseSIgVmFsdWU9IlNvdXJjZStTYW5zK1BybzozMDAsNDAwLDYwMCw3MDAsMzAwaXRhbGljLDQwMGl0YWxpYyw2MDBpdGFsaWMiIFJlY29yZGVkVmFsdWU9IlNvdXJjZStTYW5zK1BybzozMDAsNDAwLDYwMCw3MDAsMzAwaXRhbGljLDQwMGl0YWxpYyw2MDBpdGFsaWMiIENvcnJlbGF0aW9uQmluZGluZz0iIiBVcmxFbmNvZGU9IkZhbHNlIiBVc2VUb0dyb3VwUmVzdWx0cz0iRmFsc2UiIC8+DQogICAgICAgICAgPC9RdWVyeVN0cmluZ1BhcmFtZXRlcnM+DQogICAgICAgIDwvUmVxdWVzdD4NCiAgICAgICAgPFJlcXVlc3QgTWV0aG9kPSJHRVQiIEd1aWQ9ImE0YjVlOTU3LWU3OWItNDI5Yi04NjQ4LTM2MWQzMjUxMTZhYiIgVmVyc2lvbj0iMS4xIiBVcmw9Imh0dHBzOi8vZm9udHMuZ3N0YXRpYy5jb20vcy9zb3VyY2VzYW5zcHJvL3YxMy82eEt3ZFNCWUtjU1YtTENvZVFxZlgxUllPbzNxUFpaTWtpZHMxOEkud29mZiIgVGhpbmtUaW1lPSIwIiBUaW1lb3V0PSIzMDAiIFBhcnNlRGVwZW5kZW50UmVxdWVzdHM9IlRydWUiIEZvbGxvd1JlZGlyZWN0cz0iVHJ1ZSIgUmVjb3JkUmVzdWx0PSJUcnVlIiBDYWNoZT0iRmFsc2UiIFJlc3BvbnNlVGltZUdvYWw9IjAiIEVuY29kaW5nPSJ1dGYtOCIgRXhwZWN0ZWRIdHRwU3RhdHVzQ29kZT0iMCIgRXhwZWN0ZWRSZXNwb25zZVVybD0iIiBSZXBvcnRpbmdOYW1lPSIiIElnbm9yZUh0dHBTdGF0dXNDb2RlPSJGYWxzZSI+DQogICAgICAgICAgPEhlYWRlcnM+DQogICAgICAgICAgICA8SGVhZGVyIE5hbWU9IlJlZmVyZXIiIFZhbHVlPSJodHRwczovL3Byb3llY3RvYXNlZ3VyYW1pZW50bzIwMTl4LmF6dXJld2Vic2l0ZXMubmV0L2xvZ2luLmFzcHgiIC8+DQogICAgICAgICAgPC9IZWFkZXJzPg0KICAgICAgICA8L1JlcXVlc3Q+DQogICAgICAgIDxSZXF1ZXN0IE1ldGhvZD0iR0VUIiBHdWlkPSJkZTE2MTYzNC03MTk5LTQ4YmEtYTU0MC1lYjRiNGVhYmYzZDciIFZlcnNpb249IjEuMSIgVXJsPSJodHRwczovL2ZvbnRzLmdzdGF0aWMuY29tL3Mvc291cmNlc2Fuc3Byby92MTMvNnhLMWRTQllLY1NWLUxDb2VRcWZYMVJZT28zcVBaN25zRFEud29mZiIgVGhpbmtUaW1lPSIwIiBUaW1lb3V0PSIzMDAiIFBhcnNlRGVwZW5kZW50UmVxdWVzdHM9IlRydWUiIEZvbGxvd1JlZGlyZWN0cz0iVHJ1ZSIgUmVjb3JkUmVzdWx0PSJUcnVlIiBDYWNoZT0iRmFsc2UiIFJlc3BvbnNlVGltZUdvYWw9IjAiIEVuY29kaW5nPSJ1dGYtOCIgRXhwZWN0ZWRIdHRwU3RhdHVzQ29kZT0iMCIgRXhwZWN0ZWRSZXNwb25zZVVybD0iIiBSZXBvcnRpbmdOYW1lPSIiIElnbm9yZUh0dHBTdGF0dXNDb2RlPSJGYWxzZSI+DQogICAgICAgICAgPEhlYWRlcnM+DQogICAgICAgICAgICA8SGVhZGVyIE5hbWU9IlJlZmVyZXIiIFZhbHVlPSJodHRwczovL3Byb3llY3RvYXNlZ3VyYW1pZW50bzIwMTl4LmF6dXJld2Vic2l0ZXMubmV0L2xvZ2luLmFzcHgiIC8+DQogICAgICAgICAgPC9IZWFkZXJzPg0KICAgICAgICA8L1JlcXVlc3Q+DQogICAgICAgIDxSZXF1ZXN0IE1ldGhvZD0iR0VUIiBHdWlkPSI0ODY1ZWMzZC0yOTNlLTQ4NTQtODlmZi01OTZiNjQxOGE4YjQiIFZlcnNpb249IjEuMSIgVXJsPSJodHRwczovL2ZvbnRzLmdzdGF0aWMuY29tL3Mvc291cmNlc2Fuc3Byby92MTMvNnhLd2RTQllLY1NWLUxDb2VRcWZYMVJZT28zcVBaWTRsQ2RzMThJLndvZmYiIFRoaW5rVGltZT0iMCIgVGltZW91dD0iMzAwIiBQYXJzZURlcGVuZGVudFJlcXVlc3RzPSJUcnVlIiBGb2xsb3dSZWRpcmVjdHM9IlRydWUiIFJlY29yZFJlc3VsdD0iVHJ1ZSIgQ2FjaGU9IkZhbHNlIiBSZXNwb25zZVRpbWVHb2FsPSIwIiBFbmNvZGluZz0idXRmLTgiIEV4cGVjdGVkSHR0cFN0YXR1c0NvZGU9IjAiIEV4cGVjdGVkUmVzcG9uc2VVcmw9IiIgUmVwb3J0aW5nTmFtZT0iIiBJZ25vcmVIdHRwU3RhdHVzQ29kZT0iRmFsc2UiPg0KICAgICAgICAgIDxIZWFkZXJzPg0KICAgICAgICAgICAgPEhlYWRlciBOYW1lPSJSZWZlcmVyIiBWYWx1ZT0iaHR0cHM6Ly9wcm95ZWN0b2FzZWd1cmFtaWVudG8yMDE5eC5henVyZXdlYnNpdGVzLm5ldC9sb2dpbi5hc3B4IiAvPg0KICAgICAgICAgIDwvSGVhZGVycz4NCiAgICAgICAgPC9SZXF1ZXN0Pg0KICAgICAgICA8UmVxdWVzdCBNZXRob2Q9IkdFVCIgR3VpZD0iNzM2N2JkNTAtYTEzMi00NDBiLWJlMTYtMjI0ODkxNjQ5MzRlIiBWZXJzaW9uPSIxLjEiIFVybD0iaHR0cHM6Ly9mb250cy5nc3RhdGljLmNvbS9zL3NvdXJjZXNhbnNwcm8vdjEzLzZ4S3lkU0JZS2NTVi1MQ29lUXFmWDFSWU9vM2lrNHp3bHhkby53b2ZmIiBUaGlua1RpbWU9IjAiIFRpbWVvdXQ9IjMwMCIgUGFyc2VEZXBlbmRlbnRSZXF1ZXN0cz0iVHJ1ZSIgRm9sbG93UmVkaXJlY3RzPSJUcnVlIiBSZWNvcmRSZXN1bHQ9IlRydWUiIENhY2hlPSJGYWxzZSIgUmVzcG9uc2VUaW1lR29hbD0iMCIgRW5jb2Rpbmc9InV0Zi04IiBFeHBlY3RlZEh0dHBTdGF0dXNDb2RlPSIwIiBFeHBlY3RlZFJlc3BvbnNlVXJsPSIiIFJlcG9ydGluZ05hbWU9IiIgSWdub3JlSHR0cFN0YXR1c0NvZGU9IkZhbHNlIj4NCiAgICAgICAgICA8SGVhZGVycz4NCiAgICAgICAgICAgIDxIZWFkZXIgTmFtZT0iUmVmZXJlciIgVmFsdWU9Imh0dHBzOi8vcHJveWVjdG9hc2VndXJhbWllbnRvMjAxOXguYXp1cmV3ZWJzaXRlcy5uZXQvbG9naW4uYXNweCIgLz4NCiAgICAgICAgICA8L0hlYWRlcnM+DQogICAgICAgIDwvUmVxdWVzdD4NCiAgICAgICAgPFJlcXVlc3QgTWV0aG9kPSJHRVQiIEd1aWQ9IjEwMzkyMzNiLWY4NGUtNGVkZi04NjU0LTIyM2RmMzcwMTc3MyIgVmVyc2lvbj0iMS4xIiBVcmw9Imh0dHBzOi8vZm9udHMuZ3N0YXRpYy5jb20vcy9zb3VyY2VzYW5zcHJvL3YxMy82eEszZFNCWUtjU1YtTENvZVFxZlgxUllPbzNxT0s3ai53b2ZmIiBUaGlua1RpbWU9IjAiIFRpbWVvdXQ9IjMwMCIgUGFyc2VEZXBlbmRlbnRSZXF1ZXN0cz0iVHJ1ZSIgRm9sbG93UmVkaXJlY3RzPSJUcnVlIiBSZWNvcmRSZXN1bHQ9IlRydWUiIENhY2hlPSJGYWxzZSIgUmVzcG9uc2VUaW1lR29hbD0iMCIgRW5jb2Rpbmc9InV0Zi04IiBFeHBlY3RlZEh0dHBTdGF0dXNDb2RlPSIwIiBFeHBlY3RlZFJlc3BvbnNlVXJsPSIiIFJlcG9ydGluZ05hbWU9IiIgSWdub3JlSHR0cFN0YXR1c0NvZGU9IkZhbHNlIj4NCiAgICAgICAgICA8SGVhZGVycz4NCiAgICAgICAgICAgIDxIZWFkZXIgTmFtZT0iUmVmZXJlciIgVmFsdWU9Imh0dHBzOi8vcHJveWVjdG9hc2VndXJhbWllbnRvMjAxOXguYXp1cmV3ZWJzaXRlcy5uZXQvbG9naW4uYXNweCIgLz4NCiAgICAgICAgICA8L0hlYWRlcnM+DQogICAgICAgIDwvUmVxdWVzdD4NCiAgICAgICAgPFJlcXVlc3QgTWV0aG9kPSJHRVQiIEd1aWQ9Ijg5ZmQwYzg2LTlmM2YtNGRkMS04OGY0LWFhNDQ0NTUxY2FiNyIgVmVyc2lvbj0iMS4xIiBVcmw9Imh0dHBzOi8vZm9udHMuZ3N0YXRpYy5jb20vcy9zb3VyY2VzYW5zcHJvL3YxMy82eEt5ZFNCWUtjU1YtTENvZVFxZlgxUllPbzNpNTRyd2x4ZG8ud29mZiIgVGhpbmtUaW1lPSIwIiBUaW1lb3V0PSIzMDAiIFBhcnNlRGVwZW5kZW50UmVxdWVzdHM9IlRydWUiIEZvbGxvd1JlZGlyZWN0cz0iVHJ1ZSIgUmVjb3JkUmVzdWx0PSJUcnVlIiBDYWNoZT0iRmFsc2UiIFJlc3BvbnNlVGltZUdvYWw9IjAiIEVuY29kaW5nPSJ1dGYtOCIgRXhwZWN0ZWRIdHRwU3RhdHVzQ29kZT0iMCIgRXhwZWN0ZWRSZXNwb25zZVVybD0iIiBSZXBvcnRpbmdOYW1lPSIiIElnbm9yZUh0dHBTdGF0dXNDb2RlPSJGYWxzZSI+DQogICAgICAgICAgPEhlYWRlcnM+DQogICAgICAgICAgICA8SGVhZGVyIE5hbWU9IlJlZmVyZXIiIFZhbHVlPSJodHRwczovL3Byb3llY3RvYXNlZ3VyYW1pZW50bzIwMTl4LmF6dXJld2Vic2l0ZXMubmV0L2xvZ2luLmFzcHgiIC8+DQogICAgICAgICAgPC9IZWFkZXJzPg0KICAgICAgICA8L1JlcXVlc3Q+DQogICAgICAgIDxSZXF1ZXN0IE1ldGhvZD0iR0VUIiBHdWlkPSIzN2E5M2Q5Zi00M2FjLTQ2YzYtYTg2Mi00NjZkY2FjNzAzOTEiIFZlcnNpb249IjEuMSIgVXJsPSJodHRwczovL2ZvbnRzLmdzdGF0aWMuY29tL3Mvc291cmNlc2Fuc3Byby92MTMvNnhLeWRTQllLY1NWLUxDb2VRcWZYMVJZT28zaWc0dndseGRvLndvZmYiIFRoaW5rVGltZT0iMCIgVGltZW91dD0iMzAwIiBQYXJzZURlcGVuZGVudFJlcXVlc3RzPSJUcnVlIiBGb2xsb3dSZWRpcmVjdHM9IlRydWUiIFJlY29yZFJlc3VsdD0iVHJ1ZSIgQ2FjaGU9IkZhbHNlIiBSZXNwb25zZVRpbWVHb2FsPSIwIiBFbmNvZGluZz0idXRmLTgiIEV4cGVjdGVkSHR0cFN0YXR1c0NvZGU9IjAiIEV4cGVjdGVkUmVzcG9uc2VVcmw9IiIgUmVwb3J0aW5nTmFtZT0iIiBJZ25vcmVIdHRwU3RhdHVzQ29kZT0iRmFsc2UiPg0KICAgICAgICAgIDxIZWFkZXJzPg0KICAgICAgICAgICAgPEhlYWRlciBOYW1lPSJSZWZlcmVyIiBWYWx1ZT0iaHR0cHM6Ly9wcm95ZWN0b2FzZWd1cmFtaWVudG8yMDE5eC5henVyZXdlYnNpdGVzLm5ldC9sb2dpbi5hc3B4IiAvPg0KICAgICAgICAgIDwvSGVhZGVycz4NCiAgICAgICAgPC9SZXF1ZXN0Pg0KICAgICAgPC9EZXBlbmRlbnRSZXF1ZXN0cz4NCiAgICAgIDxGb3JtUG9zdEh0dHBCb2R5Pg0KICAgICAgICA8Rm9ybVBvc3RQYXJhbWV0ZXIgTmFtZT0iX19WSUVXU1RBVEUiIFZhbHVlPSJ7eyRISURERU4xLl9fVklFV1NUQVRFfX0iIFJlY29yZGVkVmFsdWU9IjY0TTVLaVN4SGFjS3FZSUxkNVVJQXUySiszR3B4WllFc0VRSnFPZDhMbTI4WDdvcUV6ODc3Q2dRN2k5U0M5dXJLb2FOQmxzdm9rV0cyWXE4NE5oLzdZOXNmMm8wc01aaVY2TjQvUmJFWHZvPSIgQ29ycmVsYXRpb25CaW5kaW5nPSIiIFVybEVuY29kZT0iVHJ1ZSIgLz4NCiAgICAgICAgPEZvcm1Qb3N0UGFyYW1ldGVyIE5hbWU9Il9fVklFV1NUQVRFR0VORVJBVE9SIiBWYWx1ZT0ie3skSElEREVOMS5fX1ZJRVdTVEFURUdFTkVSQVRPUn19IiBSZWNvcmRlZFZhbHVlPSJDMkVFOUFCQiIgQ29ycmVsYXRpb25CaW5kaW5nPSIiIFVybEVuY29kZT0iVHJ1ZSIgLz4NCiAgICAgICAgPEZvcm1Qb3N0UGFyYW1ldGVyIE5hbWU9Il9fRVZFTlRWQUxJREFUSU9OIiBWYWx1ZT0ie3skSElEREVOMS5fX0VWRU5UVkFMSURBVElPTn19IiBSZWNvcmRlZFZhbHVlPSIzUFVDNnVwS0Q0UHdlZVZiVzE1dlFVS3ZvWTVMVGc0MGdVT1dMK2xCeHdETjBlRTVCVU9QbE9sMExueGVhSzFORFlFWWEyamc2UEhRTHh3QWdyNnpmdlpDTlJxSnZCcDcveWs0M1NJZ1J0VzVKc2d0d1g4SW9jNTlNR1NhYldKc09DR2lXRGgrcm9WSG55OVpaM28vemtLNUllQW9aRjJmaW9iTk9aazBQd2c9IiBDb3JyZWxhdGlvbkJpbmRpbmc9IiIgVXJsRW5jb2RlPSJUcnVlIiAvPg0KICAgICAgICA8Rm9ybVBvc3RQYXJhbWV0ZXIgTmFtZT0idHh0Tm9tYnJlVXN1YXJpbyIgVmFsdWU9IkNhcmxvcyIgUmVjb3JkZWRWYWx1ZT0iQ2FybG9zIiBDb3JyZWxhdGlvbkJpbmRpbmc9IiIgVXJsRW5jb2RlPSJUcnVlIiAvPg0KICAgICAgICA8Rm9ybVBvc3RQYXJhbWV0ZXIgTmFtZT0idHh0Q29udHJhc2XDsWEiIFZhbHVlPSJhbGVqYW5kbyIgUmVjb3JkZWRWYWx1ZT0iYWxlamFuZG8iIENvcnJlbGF0aW9uQmluZGluZz0iIiBVcmxFbmNvZGU9IlRydWUiIC8+DQogICAgICAgIDxGb3JtUG9zdFBhcmFtZXRlciBOYW1lPSJCdXR0b24xIiBWYWx1ZT0iSW5pY2lhciBTZXNpw7NuIiBSZWNvcmRlZFZhbHVlPSJJbmljaWFyIFNlc2nDs24iIENvcnJlbGF0aW9uQmluZGluZz0ie3tGb3JtUG9zdFBhcmFtMS5CdXR0b24xfX0iIFVybEVuY29kZT0iVHJ1ZSIgLz4NCiAgICAgIDwvRm9ybVBvc3RIdHRwQm9keT4NCiAgICA8L1JlcXVlc3Q+DQogIDwvSXRlbXM+DQogIDxWYWxpZGF0aW9uUnVsZXM+DQogICAgPFZhbGlkYXRpb25SdWxlIENsYXNzbmFtZT0iTWljcm9zb2Z0LlZpc3VhbFN0dWRpby5UZXN0VG9vbHMuV2ViVGVzdGluZy5SdWxlcy5WYWxpZGF0ZVJlc3BvbnNlVXJsLCBNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvLlF1YWxpdHlUb29scy5XZWJUZXN0RnJhbWV3b3JrLCBWZXJzaW9uPTEwLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EiIERpc3BsYXlOYW1lPSJEaXJlY2Npw7NuIFVSTCBkZSByZXNwdWVzdGEiIERlc2NyaXB0aW9uPSJDb21wcnVlYmEgcXVlIGxhIGRpcmVjY2nDs24gVVJMIGRlIHJlc3B1ZXN0YSB0cmFzIGVsIHNlZ3VpbWllbnRvIGRlIGxhcyByZWRpcmVjY2lvbmVzIGVzIGxhIG1pc21hIHF1ZSBsYSBkaXJlY2Npw7NuIFVSTCBkZSByZXNwdWVzdGEgcmVnaXN0cmFkYS4gU2Ugb21pdGVuIGxvcyBwYXLDoW1ldHJvcyBkZSBRdWVyeVN0cmluZy4iIExldmVsPSJMb3ciIEV4ZWN0dWlvbk9yZGVyPSJCZWZvcmVEZXBlbmRlbnRzIiAvPg0KICAgIDxWYWxpZGF0aW9uUnVsZSBDbGFzc25hbWU9Ik1pY3Jvc29mdC5WaXN1YWxTdHVkaW8uVGVzdFRvb2xzLldlYlRlc3RpbmcuUnVsZXMuVmFsaWRhdGlvblJ1bGVSZXNwb25zZVRpbWVHb2FsLCBNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvLlF1YWxpdHlUb29scy5XZWJUZXN0RnJhbWV3b3JrLCBWZXJzaW9uPTEwLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EiIERpc3BsYXlOYW1lPSJPYmpldGl2byBkZSB0aWVtcG8gZGUgcmVzcHVlc3RhIiBEZXNjcmlwdGlvbj0iVmFsaWRhIHF1ZSBlbCB0aWVtcG8gZGUgcmVzcHVlc3RhIGRlIGxhIHNvbGljaXR1ZCBzZWEgbWVub3IgbyBpZ3VhbCBxdWUgZWwgb2JqZXRpdm8gZGUgdGllbXBvIGRlIHJlc3B1ZXN0YSBlc3BlY2lmaWNhZG8gZW4gbGEgc29saWNpdHVkLiBTZSBwYXNhcsOhbiBwb3IgYWx0byBsb3Mgb2JqZXRpdm9zIGRlIHRpZW1wbyBkZSByZXNwdWVzdGEgcXVlIHNlYW4gY2Vyby4iIExldmVsPSJMb3ciIEV4ZWN0dWlvbk9yZGVyPSJBZnRlckRlcGVuZGVudHMiPg0KICAgICAgPFJ1bGVQYXJhbWV0ZXJzPg0KICAgICAgICA8UnVsZVBhcmFtZXRlciBOYW1lPSJUb2xlcmFuY2UiIFZhbHVlPSIwIiAvPg0KICAgICAgPC9SdWxlUGFyYW1ldGVycz4NCiAgICA8L1ZhbGlkYXRpb25SdWxlPg0KICA8L1ZhbGlkYXRpb25SdWxlcz4NCjwvV2ViVGVzdD4=">
+      <Execution id="6f74299b-6897-4980-ab93-0db63e869652" />
+    </WebTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry isTransparent="false" testId="5d71ac22-61dd-46d8-b534-f0cccc7960b2" executionId="b33e3e0d-1eb4-4530-9e45-08ddd9c6dd5b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <TestEntries>
+        <TestEntry isTransparent="false" testId="0fdd5cf0-81e8-4336-8296-72f61a1a88bd" executionId="bb29cdaf-3647-4b50-8ca9-747ba8d5758c" parentExecutionId="b33e3e0d-1eb4-4530-9e45-08ddd9c6dd5b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+      </TestEntries>
+    </TestEntry>
+  </TestEntries>
+  <Results>
+    <LoadTestResult executionId="b33e3e0d-1eb4-4530-9e45-08ddd9c6dd5b" testId="5d71ac22-61dd-46d8-b534-f0cccc7960b2" testName="LoadTest1" computerName="DESKTOP-EES76C3" duration="00:05:00" startTime="2019-10-31T15:57:54.6079318-06:00" endTime="2019-10-31T16:02:54.6079318-06:00" testType="fa4c85ff-1236-4463-b954-3ba2f0eabd95" outcome="Completed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b33e3e0d-1eb4-4530-9e45-08ddd9c6dd5b" runId="1" controllerStartTime="2019-10-31T15:57:54.6079318-06:00" runStatus="Stopped" resultsStoreType="Database" resultsRepositoryConnectString="LAs4ogoKlDd+VpAl2ugknpVnps2Q+yFLesmD6LbUL+Km/JX8cBHGI53gZ4BH8pTCcqKm6fIrGHKGBGJ3QBDSWVtG/R9gmVK41LpMFWa4ySQbzsbWeWhsOim1CQqNS57+" loadTestDuration="300" loadTestWarmupTime="0" previouslyViewed="false">
+      <AnalyzerViewState>
+        <LoadTestRunDescriptor isLegendPanelVisible="true" isOverviewPanelVisible="true" isCounterPanelVisible="true" scrollingGraph="false" minMaxGraph="false" showHorizontalGridOnGraph="true" showThresholdsOnGraph="true" showComparison="false" showZoom="true" lockZoom="true" activeConsoleView="Graph" selectedGraphPanel1="Indicadores clave" selectedGraphPanel2="Tiempo de respuesta de la página" selectedGraphPanel3="Sistema a prueba" selectedGraphPanel4="Controlador y agentes" graphPanelLayout="FourGrid" tablePanelLayout="TwoHorizontal" selectedTablePanel1="Tests" selectedTablePanel2="Errors" selectedTablePanel3="Thresholds" selectedTablePanel4="Transactions" controllerName="DESKTOP-EES76C3" isLocalRun="true" testRunId="b2996ce4-98dc-42ff-9818-4102f3e44889" repositoryRunId="0">
+          <GraphDescriptors>
+            <GraphDescriptor graphName="Indicadores clave">
+              <HorizontalZoomRange lower="-1" upper="-1" />
+              <VerticalZoomRange lower="0" upper="100" />
+              <PlotDescriptors>
+                <PlotDescriptor colorArgb="-65536" lineStyle="0" fixedRange="0" rangeGroup="User Load" showOnGraph="true" isSelected="false">
+                  <CounterDescriptor machineName="DESKTOP-EES76C3" categoryName="LoadTest:Scenario" counterName="User Load" instanceName="_Total" baseInstanceName="_Total" loadTestItemId="-1" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-16744448" lineStyle="0" fixedRange="0" rangeGroup="Pages/Sec" showOnGraph="true" isSelected="false">
+                  <CounterDescriptor machineName="DESKTOP-EES76C3" categoryName="LoadTest:Page" counterName="Pages/Sec" instanceName="_Total" baseInstanceName="_Total" loadTestItemId="-1" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-16776961" lineStyle="0" fixedRange="0" rangeGroup="Avg. Page Time" showOnGraph="true" isSelected="false">
+                  <CounterDescriptor machineName="DESKTOP-EES76C3" categoryName="LoadTest:Page" counterName="Avg. Page Time" instanceName="_Total" baseInstanceName="_Total" loadTestItemId="-1" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-8388480" lineStyle="0" fixedRange="0" rangeGroup="Errores por segundo" showOnGraph="true" isSelected="false">
+                  <CounterDescriptor machineName="DESKTOP-EES76C3" categoryName="LoadTest:Errors" counterName="Errores por segundo" instanceName="_Total" baseInstanceName="_Total" loadTestItemId="-1" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-23296" lineStyle="0" fixedRange="0" rangeGroup="Infracciones de umbral por segundo" showOnGraph="true" isSelected="false">
+                  <CounterDescriptor machineName="DESKTOP-EES76C3" categoryName="LoadTest:Errors" counterName="Infracciones de umbral por segundo" instanceName="_Total" baseInstanceName="_Total" loadTestItemId="-1" />
+                </PlotDescriptor>
+              </PlotDescriptors>
+            </GraphDescriptor>
+            <GraphDescriptor graphName="Sistema a prueba">
+              <HorizontalZoomRange lower="-1" upper="-1" />
+              <VerticalZoomRange lower="0" upper="100" />
+            </GraphDescriptor>
+            <GraphDescriptor graphName="Controlador y agentes">
+              <HorizontalZoomRange lower="-1" upper="-1" />
+              <VerticalZoomRange lower="0" upper="100" />
+              <PlotDescriptors>
+                <PlotDescriptor colorArgb="-65536" lineStyle="0" fixedRange="100" rangeGroup="% Processor Time" showOnGraph="true" isSelected="false">
+                  <CounterDescriptor machineName="DESKTOP-EES76C3" categoryName="Processor" counterName="% Processor Time" instanceName="0" baseInstanceName="0" loadTestItemId="-1" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-16744448" lineStyle="0" fixedRange="0" rangeGroup="Memory Bytes" showOnGraph="true" isSelected="false">
+                  <CounterDescriptor machineName="DESKTOP-EES76C3" categoryName="Memory" counterName="Available MBytes" instanceName="systemdiagnosticsperfcounterlibsingleinstance" baseInstanceName="systemdiagnosticsperfcounterlibsingleinstance" loadTestItemId="-1" />
+                </PlotDescriptor>
+              </PlotDescriptors>
+            </GraphDescriptor>
+            <GraphDescriptor graphName="Tiempo de respuesta de la prueba">
+              <HorizontalZoomRange lower="-1" upper="-1" />
+              <VerticalZoomRange lower="0" upper="95" />
+              <PlotDescriptors>
+                <PlotDescriptor colorArgb="-65536" lineStyle="0" fixedRange="95" rangeGroup="Avg. Test Time" showOnGraph="true" isSelected="false" counterMetadata="Navegar_portal_Azure;Escenario1">
+                  <CounterDescriptor machineName="DESKTOP-EES76C3" categoryName="LoadTest:Test" counterName="Avg. Test Time" instanceName="Navegar_portal_Azure(000)" baseInstanceName="Navegar_portal_Azure" loadTestItemId="0" />
+                </PlotDescriptor>
+              </PlotDescriptors>
+            </GraphDescriptor>
+            <GraphDescriptor graphName="Tiempo de respuesta de la transacción">
+              <HorizontalZoomRange lower="-1" upper="-1" />
+              <VerticalZoomRange lower="0" upper="100" />
+            </GraphDescriptor>
+            <GraphDescriptor graphName="Tiempo de respuesta de la página">
+              <HorizontalZoomRange lower="-1" upper="-1" />
+              <VerticalZoomRange lower="0" upper="17" />
+              <PlotDescriptors>
+                <PlotDescriptor colorArgb="-65536" lineStyle="0" fixedRange="17" rangeGroup="Avg. Page Time" showOnGraph="true" isSelected="true" counterMetadata="Navegar_portal_Azure;Escenario1;https://proyectoaseguramiento2019x.azurewebsites.net/login.aspx----{GET}">
+                  <CounterDescriptor machineName="DESKTOP-EES76C3" categoryName="LoadTest:Page" counterName="Avg. Page Time" instanceName="login-aspx{GET}(013)" baseInstanceName="login-aspx{GET}" loadTestItemId="13" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-16744448" lineStyle="0" fixedRange="17" rangeGroup="Avg. Page Time" showOnGraph="true" isSelected="false" counterMetadata="Navegar_portal_Azure;Escenario1;https://fonts.googleapis.com/css----{GET}">
+                  <CounterDescriptor machineName="DESKTOP-EES76C3" categoryName="LoadTest:Page" counterName="Avg. Page Time" instanceName="css{GET}(016)" baseInstanceName="css{GET}" loadTestItemId="16" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-16776961" lineStyle="0" fixedRange="17" rangeGroup="Avg. Page Time" showOnGraph="true" isSelected="false" counterMetadata="Navegar_portal_Azure;Escenario1;https://fonts.gstatic.com/s/sourcesanspro/v13/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkids18I.woff----{GET}">
+                  <CounterDescriptor machineName="DESKTOP-EES76C3" categoryName="LoadTest:Page" counterName="Avg. Page Time" instanceName="6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkids18I-woff{GET}(009)" baseInstanceName="6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkids18I-woff{GET}" loadTestItemId="9" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-8388480" lineStyle="0" fixedRange="17" rangeGroup="Avg. Page Time" showOnGraph="true" isSelected="false" counterMetadata="Navegar_portal_Azure;Escenario1;https://fonts.gstatic.com/s/sourcesanspro/v13/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7nsDQ.woff----{GET}">
+                  <CounterDescriptor machineName="DESKTOP-EES76C3" categoryName="LoadTest:Page" counterName="Avg. Page Time" instanceName="6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7nsDQ-woff{GET}(007)" baseInstanceName="6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7nsDQ-woff{GET}" loadTestItemId="7" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-23296" lineStyle="0" fixedRange="17" rangeGroup="Avg. Page Time" showOnGraph="true" isSelected="false" counterMetadata="Navegar_portal_Azure;Escenario1;https://fonts.gstatic.com/s/sourcesanspro/v13/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZY4lCds18I.woff----{GET}">
+                  <CounterDescriptor machineName="DESKTOP-EES76C3" categoryName="LoadTest:Page" counterName="Avg. Page Time" instanceName="6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZY4lCds18I-woff{GET}(011)" baseInstanceName="6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZY4lCds18I-woff{GET}" loadTestItemId="11" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-16744320" lineStyle="0" fixedRange="17" rangeGroup="Avg. Page Time" showOnGraph="true" isSelected="false" counterMetadata="Navegar_portal_Azure;Escenario1;https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdo.woff----{GET}">
+                  <CounterDescriptor machineName="DESKTOP-EES76C3" categoryName="LoadTest:Page" counterName="Avg. Page Time" instanceName="6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdo-woff{GET}(010)" baseInstanceName="6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdo-woff{GET}" loadTestItemId="10" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-7667712" lineStyle="0" fixedRange="17" rangeGroup="Avg. Page Time" showOnGraph="true" isSelected="false" counterMetadata="Navegar_portal_Azure;Escenario1;https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7j.woff----{GET}">
+                  <CounterDescriptor machineName="DESKTOP-EES76C3" categoryName="LoadTest:Page" counterName="Avg. Page Time" instanceName="6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7j-woff{GET}(001)" baseInstanceName="6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7j-woff{GET}" loadTestItemId="1" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-16751616" lineStyle="0" fixedRange="17" rangeGroup="Avg. Page Time" showOnGraph="true" isSelected="false" counterMetadata="Navegar_portal_Azure;Escenario1;https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdo.woff----{GET}">
+                  <CounterDescriptor machineName="DESKTOP-EES76C3" categoryName="LoadTest:Page" counterName="Avg. Page Time" instanceName="6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdo-woff{GET}(004)" baseInstanceName="6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdo-woff{GET}" loadTestItemId="4" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-16777077" lineStyle="0" fixedRange="17" rangeGroup="Avg. Page Time" showOnGraph="true" isSelected="false" counterMetadata="Navegar_portal_Azure;Escenario1;https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdo.woff----{GET}">
+                  <CounterDescriptor machineName="DESKTOP-EES76C3" categoryName="LoadTest:Page" counterName="Avg. Page Time" instanceName="6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdo-woff{GET}(012)" baseInstanceName="6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdo-woff{GET}" loadTestItemId="12" />
+                </PlotDescriptor>
+              </PlotDescriptors>
+            </GraphDescriptor>
+          </GraphDescriptors>
+        </LoadTestRunDescriptor>
+      </AnalyzerViewState>
+      <Summary>
+        <PerformanceCounterResults>
+          <PerformanceCounterResult isOverallResultCounter="true" higherIsBetter="true" machineName="DESKTOP-EES76C3" categoryName="LoadTest:Scenario" counterName="User Load" instanceName="_Total" value="291" />
+          <PerformanceCounterResult isOverallResultCounter="true" higherIsBetter="true" machineName="DESKTOP-EES76C3" categoryName="LoadTest:Test" counterName="Total Tests" instanceName="_Total" value="365" />
+          <PerformanceCounterResult isOverallResultCounter="true" higherIsBetter="false" machineName="DESKTOP-EES76C3" categoryName="LoadTest:Test" counterName="Failed Tests" instanceName="_Total" value="365" />
+          <PerformanceCounterResult isOverallResultCounter="true" higherIsBetter="true" machineName="DESKTOP-EES76C3" categoryName="LoadTest:Test" counterName="Tests/Sec" instanceName="_Total" value="1.2166667" />
+          <PerformanceCounterResult isOverallResultCounter="true" higherIsBetter="false" machineName="DESKTOP-EES76C3" categoryName="LoadTest:Test" counterName="Avg. Test Time" instanceName="_Total" value="87.212265" />
+          <PerformanceCounterResult isOverallResultCounter="true" higherIsBetter="true" machineName="DESKTOP-EES76C3" categoryName="LoadTest:Request" counterName="Total Requests" instanceName="_Total" value="10358" />
+          <PerformanceCounterResult isOverallResultCounter="true" higherIsBetter="false" machineName="DESKTOP-EES76C3" categoryName="LoadTest:Request" counterName="Failed Requests" instanceName="_Total" value="1057" />
+          <PerformanceCounterResult isOverallResultCounter="true" higherIsBetter="true" machineName="DESKTOP-EES76C3" categoryName="LoadTest:Request" counterName="Cached Requests" instanceName="_Total" value="2373" />
+          <PerformanceCounterResult isOverallResultCounter="true" higherIsBetter="true" machineName="DESKTOP-EES76C3" categoryName="LoadTest:Request" counterName="Requests/Sec" instanceName="_Total" value="34.52667" />
+          <PerformanceCounterResult isOverallResultCounter="true" higherIsBetter="false" machineName="DESKTOP-EES76C3" categoryName="LoadTest:Request" counterName="Avg. Response Time" instanceName="_Total" value="0.459415078" />
+          <PerformanceCounterResult isOverallResultCounter="false" higherIsBetter="false" machineName="DESKTOP-EES76C3" categoryName="Processor" counterName="% Processor Time" instanceName="_Total" value="25.7313938" />
+          <PerformanceCounterResult isOverallResultCounter="false" higherIsBetter="true" machineName="DESKTOP-EES76C3" categoryName="Memory" counterName="Available MBytes" instanceName="-" value="4205" />
+          <PerformanceCounterResult isOverallResultCounter="false" higherIsBetter="false" machineName="DESKTOP-EES76C3" categoryName="Network Interface" counterName="Bytes Received/sec" instanceName="qualcomm atheros ar956x wireless network adapter" value="442823.438" />
+          <PerformanceCounterResult isOverallResultCounter="false" higherIsBetter="false" machineName="DESKTOP-EES76C3" categoryName="Network Interface" counterName="Bytes Received/sec" instanceName="realtek pcie gbe family controller" value="0" />
+          <PerformanceCounterResult isOverallResultCounter="false" higherIsBetter="false" machineName="DESKTOP-EES76C3" categoryName="Network Interface" counterName="Bytes Sent/sec" instanceName="qualcomm atheros ar956x wireless network adapter" value="34232.3555" />
+          <PerformanceCounterResult isOverallResultCounter="false" higherIsBetter="false" machineName="DESKTOP-EES76C3" categoryName="Network Interface" counterName="Bytes Sent/sec" instanceName="realtek pcie gbe family controller" value="0" />
+        </PerformanceCounterResults>
+        <PageSummaries>
+          <PageSummary scenarioName="Escenario1" testName="Navegar_portal_Azure" url="login.aspx{GET}" pageCount="1000" responseTime="3692" />
+          <PageSummary scenarioName="Escenario1" testName="Navegar_portal_Azure" url="css{GET}" pageCount="635" responseTime="113" />
+          <PageSummary scenarioName="Escenario1" testName="Navegar_portal_Azure" url="6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkids18I.woff{GET}" pageCount="635" responseTime="134" />
+          <PageSummary scenarioName="Escenario1" testName="Navegar_portal_Azure" url="6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7nsDQ.woff{GET}" pageCount="635" responseTime="67" />
+          <PageSummary scenarioName="Escenario1" testName="Navegar_portal_Azure" url="6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZY4lCds18I.woff{GET}" pageCount="635" responseTime="68" />
+          <PageSummary scenarioName="Escenario1" testName="Navegar_portal_Azure" url="6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdo.woff{GET}" pageCount="634" responseTime="72" />
+          <PageSummary scenarioName="Escenario1" testName="Navegar_portal_Azure" url="6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7j.woff{GET}" pageCount="634" responseTime="70" />
+          <PageSummary scenarioName="Escenario1" testName="Navegar_portal_Azure" url="6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdo.woff{GET}" pageCount="634" responseTime="65" />
+          <PageSummary scenarioName="Escenario1" testName="Navegar_portal_Azure" url="6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdo.woff{GET}" pageCount="634" responseTime="74" />
+        </PageSummaries>
+        <TestSummaries>
+          <TestSummary scenarioName="Escenario1" testName="Navegar_portal_Azure" totalTests="365" testsFailed="365" averageDuration="87212" />
+        </TestSummaries>
+      </Summary>
+    </LoadTestResult>
+  </Results>
+</TestRun>
