@@ -24,7 +24,7 @@ namespace ProyectoAseguramiento
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            String usuario = "Aseguramiento";
+            String usuario = "Aseguramiento2019";
             String contraseña = "2019";
 
             
