@@ -25,7 +25,7 @@ namespace ProyectoAseguramiento
         protected void Button1_Click(object sender, EventArgs e)
         {
             String usuario = "Aseguramiento2019";
-            String contraseña = "2020"
+            String contraseña = "2020";
 
             
             if (txtNombreUsuario.Text.Equals(usuario) && txtContraseña.Text.Equals(contraseña)){
