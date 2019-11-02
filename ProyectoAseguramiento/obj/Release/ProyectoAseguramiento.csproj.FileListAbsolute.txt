@@ -108,3 +108,4 @@ P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\ProyectoAseguramiento\obj\Re
 P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\ProyectoAseguramiento\obj\Release\ProyectoAseguramiento.csproj.CopyComplete
 P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\ProyectoAseguramiento\obj\Release\ProyectoAseguramiento.dll
 P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\ProyectoAseguramiento\obj\Release\ProyectoAseguramiento.pdb
+P:\Desktop\Aseguramiento_2019\ProyectoAseguramiento\ProyectoAseguramiento\obj\Release\ProyectoAseguramiento.csprojAssemblyReference.cache
